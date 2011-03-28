@@ -1,4 +1,4 @@
-#
+#test git
 # if you want the ram-disk device, define this to be the
 # size in blocks.
 #
