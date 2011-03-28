@@ -1,0 +1,557 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALRMMASK	chr_drv/tty_io.c	17;"	d	file:
+AR	Makefile	/^AR	=ar#gar$/;"	m
+AR	blk_drv/Makefile	/^AR	=ar#gar$/;"	m
+AR	chr_drv/Makefile	/^AR	=ar#gar$/;"	m
+AR	math/Makefile	/^AR	=ar#gar$/;"	m
+AS	Makefile	/^AS	=as#gas$/;"	m
+AS	blk_drv/Makefile	/^AS	=as#gas$/;"	m
+AS	chr_drv/Makefile	/^AS	=as#gas$/;"	m
+AS	math/Makefile	/^AS	=as#gas$/;"	m
+CC	Makefile	/^CC	=gcc$/;"	m
+CC	blk_drv/Makefile	/^CC	=gcc$/;"	m
+CC	chr_drv/Makefile	/^CC	=gcc$/;"	m
+CC	math/Makefile	/^CC	=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS	=-Wall -O -fstrength-reduce -fomit-frame-pointer -fcombine-regs \\$/;"	m
+CFLAGS	blk_drv/Makefile	/^CFLAGS	=-Wall -O -fstrength-reduce -fomit-frame-pointer -fcombine-regs \\$/;"	m
+CFLAGS	chr_drv/Makefile	/^CFLAGS	=-Wall -O -fstrength-reduce -fomit-frame-pointer -fcombine-regs \\$/;"	m
+CFLAGS	math/Makefile	/^CFLAGS	=-Wall -O -fstrength-reduce -fomit-frame-pointer -fcombine-regs \\$/;"	m
+CMOS_READ	blk_drv/hd.c	28;"	d	file:
+CPP	Makefile	/^CPP	=gcc -E -nostdinc -I..\/include$/;"	m
+CPP	blk_drv/Makefile	/^CPP	=gcc -E -nostdinc -I..\/..\/include$/;"	m
+CPP	chr_drv/Makefile	/^CPP	=gcc -E -nostdinc -I..\/..\/include$/;"	m
+CPP	math/Makefile	/^CPP	=gcc -E -nostdinc -I..\/..\/include$/;"	m
+CS	system_call.s	/^CS		= 0x20$/;"	d
+CURRENT	blk_drv/blk.h	93;"	d
+CURRENT_DEV	blk_drv/blk.h	94;"	d
+DAY	mktime.c	22;"	d	file:
+DEVICE_INTR	blk_drv/blk.h	/^void (*DEVICE_INTR)(void) = NULL;$/;"	v
+DEVICE_INTR	blk_drv/blk.h	72;"	d
+DEVICE_INTR	blk_drv/blk.h	81;"	d
+DEVICE_NAME	blk_drv/blk.h	63;"	d
+DEVICE_NAME	blk_drv/blk.h	71;"	d
+DEVICE_NAME	blk_drv/blk.h	80;"	d
+DEVICE_NR	blk_drv/blk.h	65;"	d
+DEVICE_NR	blk_drv/blk.h	74;"	d
+DEVICE_NR	blk_drv/blk.h	83;"	d
+DEVICE_OFF	blk_drv/blk.h	67;"	d
+DEVICE_OFF	blk_drv/blk.h	76;"	d
+DEVICE_OFF	blk_drv/blk.h	85;"	d
+DEVICE_ON	blk_drv/blk.h	66;"	d
+DEVICE_ON	blk_drv/blk.h	75;"	d
+DEVICE_ON	blk_drv/blk.h	84;"	d
+DEVICE_REQUEST	blk_drv/blk.h	64;"	d
+DEVICE_REQUEST	blk_drv/blk.h	73;"	d
+DEVICE_REQUEST	blk_drv/blk.h	82;"	d
+DRIVE	blk_drv/floppy.c	54;"	d	file:
+DS	system_call.s	/^DS		= 0x18$/;"	d
+EAX	system_call.s	/^EAX		= 0x00$/;"	d
+EBX	system_call.s	/^EBX		= 0x04$/;"	d
+ECX	system_call.s	/^ECX		= 0x08$/;"	d
+EDX	system_call.s	/^EDX		= 0x0C$/;"	d
+EFLAGS	system_call.s	/^EFLAGS		= 0x24$/;"	d
+EIP	system_call.s	/^EIP		= 0x1C$/;"	d
+ES	system_call.s	/^ES		= 0x14$/;"	d
+FS	system_call.s	/^FS		= 0x10$/;"	d
+HOUR	mktime.c	21;"	d	file:
+INIT_REQUEST	blk_drv/blk.h	127;"	d
+INTMASK	chr_drv/tty_io.c	19;"	d	file:
+IN_ORDER	blk_drv/blk.h	40;"	d
+I_CRNL	chr_drv/tty_io.c	42;"	d	file:
+I_NLCR	chr_drv/tty_io.c	41;"	d	file:
+I_NOCR	chr_drv/tty_io.c	43;"	d	file:
+I_UCLC	chr_drv/tty_io.c	40;"	d	file:
+KILLMASK	chr_drv/tty_io.c	18;"	d	file:
+LATCH	sched.c	46;"	d	file:
+LD	Makefile	/^LD	=ld#gld$/;"	m
+LD	blk_drv/Makefile	/^LD	=ld#gld$/;"	m
+LD	chr_drv/Makefile	/^LD	=ld#gld$/;"	m
+LD	math/Makefile	/^LD	=ld#gld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS	=-s -x$/;"	m
+LDFLAGS	blk_drv/Makefile	/^LDFLAGS	=-s -x$/;"	m
+LDFLAGS	chr_drv/Makefile	/^LDFLAGS	=-s -x$/;"	m
+LDFLAGS	math/Makefile	/^LDFLAGS	=-s -x$/;"	m
+LEFT	vsprintf.c	31;"	d	file:
+L_CANON	chr_drv/tty_io.c	32;"	d	file:
+L_ECHO	chr_drv/tty_io.c	34;"	d	file:
+L_ECHOCTL	chr_drv/tty_io.c	37;"	d	file:
+L_ECHOE	chr_drv/tty_io.c	35;"	d	file:
+L_ECHOK	chr_drv/tty_io.c	36;"	d	file:
+L_ECHOKE	chr_drv/tty_io.c	38;"	d	file:
+L_ISIG	chr_drv/tty_io.c	33;"	d	file:
+MAJOR_NR	blk_drv/floppy.c	41;"	d	file:
+MAJOR_NR	blk_drv/hd.c	25;"	d	file:
+MAJOR_NR	blk_drv/ramdisk.c	17;"	d	file:
+MAX_ERRORS	blk_drv/floppy.c	60;"	d	file:
+MAX_ERRORS	blk_drv/hd.c	34;"	d	file:
+MAX_HD	blk_drv/hd.c	35;"	d	file:
+MAX_REPLIES	blk_drv/floppy.c	65;"	d	file:
+MINUTE	mktime.c	20;"	d	file:
+NPAR	chr_drv/console.c	54;"	d	file:
+NR_BLK_DEV	blk_drv/blk.h	4;"	d
+NR_HD	blk_drv/hd.c	/^static int NR_HD = 0;$/;"	v	file:
+NR_HD	blk_drv/hd.c	50;"	d	file:
+NR_REQUEST	blk_drv/blk.h	15;"	d
+OBJS	Makefile	/^OBJS  = sched.o system_call.o traps.o asm.o fork.o \\$/;"	m
+OBJS	blk_drv/Makefile	/^OBJS  = ll_rw_blk.o floppy.o hd.o ramdisk.o$/;"	m
+OBJS	chr_drv/Makefile	/^OBJS  = tty_io.o console.o keyboard.o serial.o rs_io.o \\$/;"	m
+OBJS	math/Makefile	/^OBJS  = math_emulate.o$/;"	m
+OLDESP	system_call.s	/^OLDESP		= 0x28$/;"	d
+OLDSS	system_call.s	/^OLDSS		= 0x2C$/;"	d
+ORIG_VIDEO_COLS	chr_drv/console.c	43;"	d	file:
+ORIG_VIDEO_EGA_AX	chr_drv/console.c	45;"	d	file:
+ORIG_VIDEO_EGA_BX	chr_drv/console.c	46;"	d	file:
+ORIG_VIDEO_EGA_CX	chr_drv/console.c	47;"	d	file:
+ORIG_VIDEO_LINES	chr_drv/console.c	44;"	d	file:
+ORIG_VIDEO_MODE	chr_drv/console.c	42;"	d	file:
+ORIG_VIDEO_PAGE	chr_drv/console.c	41;"	d	file:
+ORIG_X	chr_drv/console.c	39;"	d	file:
+ORIG_Y	chr_drv/console.c	40;"	d	file:
+O_CRNL	chr_drv/tty_io.c	47;"	d	file:
+O_LCUC	chr_drv/tty_io.c	49;"	d	file:
+O_NLCR	chr_drv/tty_io.c	46;"	d	file:
+O_NLRET	chr_drv/tty_io.c	48;"	d	file:
+O_POST	chr_drv/tty_io.c	45;"	d	file:
+PLUS	vsprintf.c	29;"	d	file:
+QUITMASK	chr_drv/tty_io.c	20;"	d	file:
+RESPONSE	chr_drv/console.c	85;"	d	file:
+SIGN	vsprintf.c	28;"	d	file:
+SIG_CHLD	system_call.s	/^SIG_CHLD	= 17$/;"	d
+SMALL	vsprintf.c	33;"	d	file:
+SPACE	vsprintf.c	30;"	d	file:
+SPECIAL	vsprintf.c	32;"	d	file:
+ST0	blk_drv/floppy.c	67;"	d	file:
+ST1	blk_drv/floppy.c	68;"	d	file:
+ST2	blk_drv/floppy.c	69;"	d	file:
+ST3	blk_drv/floppy.c	70;"	d	file:
+TIME_REQUESTS	sched.c	264;"	d	file:
+TSTPMASK	chr_drv/tty_io.c	21;"	d	file:
+TYPE	blk_drv/floppy.c	53;"	d	file:
+VIDEO_TYPE_CGA	chr_drv/console.c	50;"	d	file:
+VIDEO_TYPE_EGAC	chr_drv/console.c	52;"	d	file:
+VIDEO_TYPE_EGAM	chr_drv/console.c	51;"	d	file:
+VIDEO_TYPE_MDA	chr_drv/console.c	49;"	d	file:
+WAKEUP_CHARS	chr_drv/serial.c	21;"	d	file:
+YEAR	mktime.c	23;"	d	file:
+ZEROPAD	vsprintf.c	27;"	d	file:
+_BLK_H	blk_drv/blk.h	2;"	d
+_BLOCKABLE	sched.c	24;"	d	file:
+_I_FLAG	chr_drv/tty_io.c	29;"	d	file:
+_L_FLAG	chr_drv/tty_io.c	28;"	d	file:
+_O_FLAG	chr_drv/tty_io.c	30;"	d	file:
+_S	sched.c	23;"	d	file:
+_bounds	asm.s	/^_bounds:$/;"	l
+_coprocessor_error	system_call.s	/^_coprocessor_error:$/;"	l
+_coprocessor_segment_overrun	asm.s	/^_coprocessor_segment_overrun:$/;"	l
+_debug	asm.s	/^_debug:$/;"	l
+_device_not_available	system_call.s	/^_device_not_available:$/;"	l
+_divide_error	asm.s	/^_divide_error:$/;"	l
+_double_fault	asm.s	/^_double_fault:$/;"	l
+_floppy_interrupt	system_call.s	/^_floppy_interrupt:$/;"	l
+_fs	traps.c	34;"	d	file:
+_general_protection	asm.s	/^_general_protection:$/;"	l
+_hd_interrupt	system_call.s	/^_hd_interrupt:$/;"	l
+_int3	asm.s	/^_int3:$/;"	l
+_invalid_TSS	asm.s	/^_invalid_TSS:$/;"	l
+_invalid_op	asm.s	/^_invalid_op:$/;"	l
+_irq13	asm.s	/^_irq13:$/;"	l
+_keyboard_interrupt	chr_drv/keyboard.S	/^_keyboard_interrupt:$/;"	l
+_nmi	asm.s	/^_nmi:$/;"	l
+_overflow	asm.s	/^_overflow:$/;"	l
+_parallel_interrupt	system_call.s	/^_parallel_interrupt:$/;"	l
+_reserved	asm.s	/^_reserved:$/;"	l
+_rs1_interrupt	chr_drv/rs_io.s	/^_rs1_interrupt:$/;"	l
+_rs2_interrupt	chr_drv/rs_io.s	/^_rs2_interrupt:$/;"	l
+_segment_not_present	asm.s	/^_segment_not_present:$/;"	l
+_stack_segment	asm.s	/^_stack_segment:$/;"	l
+_sys_execve	system_call.s	/^_sys_execve:$/;"	l
+_sys_fork	system_call.s	/^_sys_fork:$/;"	l
+_system_call	system_call.s	/^_system_call:$/;"	l
+_timer_interrupt	system_call.s	/^_timer_interrupt:$/;"	l
+a	sched.c	/^	long * a;$/;"	m	struct:__anon1	file:
+add_request	blk_drv/ll_rw_blk.c	/^static void add_request(struct blk_dev_struct * dev, struct request * req)$/;"	f	file:
+add_timer	sched.c	/^void add_timer(long jiffies, void (*fn)(void))$/;"	f
+alt	chr_drv/keyboard.S	/^alt:	movb $0x10,%al$/;"	l
+alt_map	chr_drv/keyboard.S	/^alt_map:$/;"	l
+attr	chr_drv/console.c	/^static unsigned char	attr=0x07;$/;"	v	file:
+b	sched.c	/^	short b;$/;"	m	struct:__anon1	file:
+bad_flp_intr	blk_drv/floppy.c	/^static void bad_flp_intr(void)$/;"	f	file:
+bad_rw_intr	blk_drv/hd.c	/^static void bad_rw_intr(void)$/;"	f	file:
+bad_sys_call	system_call.s	/^bad_sys_call:$/;"	l
+beepcount	chr_drv/console.c	/^int beepcount = 0;$/;"	v
+bh	blk_drv/blk.h	/^	struct buffer_head * bh;$/;"	m	struct:request	typeref:struct:request::buffer_head
+blk_dev	blk_drv/ll_rw_blk.c	/^struct blk_dev_struct blk_dev[NR_BLK_DEV] = {$/;"	v	typeref:struct:blk_dev_struct
+blk_dev_init	blk_drv/ll_rw_blk.c	/^void blk_dev_init(void)$/;"	f
+blk_dev_struct	blk_drv/blk.h	/^struct blk_dev_struct {$/;"	s
+blocked	system_call.s	/^blocked = (33*16)$/;"	d
+bottom	chr_drv/console.c	/^static unsigned long	top,bottom;$/;"	v	file:
+buf	chr_drv/keyboard.S	/^buf = 16$/;"	d
+buf	chr_drv/rs_io.s	/^buf = 16$/;"	d
+buf	printk.c	/^static char buf[1024];$/;"	v	file:
+buffer	blk_drv/blk.h	/^	char * buffer;$/;"	m	struct:request
+caps	chr_drv/keyboard.S	/^caps:	testb $0x80,mode$/;"	l
+change_speed	chr_drv/tty_ioctl.c	/^static void change_speed(struct tty_struct * tty)$/;"	f	file:
+chr_dev_init	chr_drv/tty_io.c	/^void chr_dev_init(void)$/;"	f
+cmd	blk_drv/blk.h	/^	int cmd;		\/* READ or WRITE *\/$/;"	m	struct:request
+command	blk_drv/floppy.c	/^static unsigned char command = 0;$/;"	v	file:
+con_init	chr_drv/console.c	/^void con_init(void)$/;"	f
+con_write	chr_drv/console.c	/^void con_write(struct tty_struct * tty)$/;"	f
+controller_ready	blk_drv/hd.c	/^static int controller_ready(void)$/;"	f	file:
+copy_buffer	blk_drv/floppy.c	155;"	d	file:
+copy_mem	fork.c	/^int copy_mem(int nr,struct task_struct * p)$/;"	f
+copy_process	fork.c	/^int copy_process(int nr,long ebp,long edi,long esi,long gs,long none,$/;"	f
+copy_to_cooked	chr_drv/tty_io.c	/^void copy_to_cooked(struct tty_struct * tty)$/;"	f
+counter	system_call.s	/^counter	= 4$/;"	d
+cr	chr_drv/console.c	/^static void cr(void)$/;"	f	file:
+csi_J	chr_drv/console.c	/^static void csi_J(int par)$/;"	f	file:
+csi_K	chr_drv/console.c	/^static void csi_K(int par)$/;"	f	file:
+csi_L	chr_drv/console.c	/^static void csi_L(unsigned int nr)$/;"	f	file:
+csi_M	chr_drv/console.c	/^static void csi_M(unsigned int nr)$/;"	f	file:
+csi_P	chr_drv/console.c	/^static void csi_P(unsigned int nr)$/;"	f	file:
+csi_at	chr_drv/console.c	/^static void csi_at(unsigned int nr)$/;"	f	file:
+csi_m	chr_drv/console.c	/^void csi_m(void)$/;"	f
+ctl	blk_drv/hd.c	/^	int head,sect,cyl,wpcom,lzone,ctl;$/;"	m	struct:hd_i_struct	file:
+ctrl	chr_drv/keyboard.S	/^ctrl:	movb $0x04,%al$/;"	l
+cur	chr_drv/keyboard.S	/^cur:	movb cur_table(%eax),%al$/;"	l
+cur2	chr_drv/keyboard.S	/^cur2:	cmpb $0x01,e0		\/* e0 forces cursor movement *\/$/;"	l
+cur_rate	blk_drv/floppy.c	/^static int cur_rate = -1;$/;"	v	file:
+cur_spec1	blk_drv/floppy.c	/^static int cur_spec1 = -1;$/;"	v	file:
+cur_table	chr_drv/keyboard.S	/^cur_table:$/;"	l
+current	sched.c	/^struct task_struct *current = &(init_task.task);$/;"	v	typeref:struct:task_struct
+current_DOR	sched.c	/^unsigned char current_DOR = 0x0C;$/;"	v
+current_drive	blk_drv/floppy.c	/^static unsigned char current_drive = 0;$/;"	v	file:
+current_request	blk_drv/blk.h	/^	struct request * current_request;$/;"	m	struct:blk_dev_struct	typeref:struct:blk_dev_struct::request
+current_track	blk_drv/floppy.c	/^static unsigned char current_track = 255;$/;"	v	file:
+cursor	chr_drv/keyboard.S	/^cursor:$/;"	l
+cyl	blk_drv/hd.c	/^	int head,sect,cyl,wpcom,lzone,ctl;$/;"	m	struct:hd_i_struct	file:
+del	chr_drv/console.c	/^static void del(void)$/;"	f	file:
+delete_char	chr_drv/console.c	/^static void delete_char(void)$/;"	f	file:
+delete_line	chr_drv/console.c	/^static void delete_line(void)$/;"	f	file:
+dev	blk_drv/blk.h	/^	int dev;		\/* -1 if no request *\/$/;"	m	struct:request
+die	chr_drv/keyboard.S	/^die:	jmp die$/;"	l
+die	traps.c	/^static void die(char * str,long esp_ptr,long nr)$/;"	f	file:
+do_bounds	traps.c	/^void do_bounds(long esp, long error_code)$/;"	f
+do_coprocessor_error	traps.c	/^void do_coprocessor_error(long esp, long error_code)$/;"	f
+do_coprocessor_segment_overrun	traps.c	/^void do_coprocessor_segment_overrun(long esp, long error_code)$/;"	f
+do_debug	traps.c	/^void do_debug(long esp, long error_code)$/;"	f
+do_device_not_available	traps.c	/^void do_device_not_available(long esp, long error_code)$/;"	f
+do_div	vsprintf.c	35;"	d	file:
+do_divide_error	traps.c	/^void do_divide_error(long esp, long error_code)$/;"	f
+do_double_fault	traps.c	/^void do_double_fault(long esp, long error_code)$/;"	f
+do_exit	exit.c	/^int do_exit(long code)$/;"	f
+do_fd_request	blk_drv/floppy.c	/^void do_fd_request(void)$/;"	f
+do_floppy_timer	sched.c	/^void do_floppy_timer(void)$/;"	f
+do_general_protection	traps.c	/^void do_general_protection(long esp, long error_code)$/;"	f
+do_hd_request	blk_drv/hd.c	/^void do_hd_request(void)$/;"	f
+do_int3	traps.c	/^void do_int3(long * esp, long error_code,$/;"	f
+do_invalid_TSS	traps.c	/^void do_invalid_TSS(long esp,long error_code)$/;"	f
+do_invalid_op	traps.c	/^void do_invalid_op(long esp, long error_code)$/;"	f
+do_nmi	traps.c	/^void do_nmi(long esp, long error_code)$/;"	f
+do_overflow	traps.c	/^void do_overflow(long esp, long error_code)$/;"	f
+do_rd_request	blk_drv/ramdisk.c	/^void do_rd_request(void)$/;"	f
+do_reserved	traps.c	/^void do_reserved(long esp, long error_code)$/;"	f
+do_segment_not_present	traps.c	/^void do_segment_not_present(long esp,long error_code)$/;"	f
+do_self	chr_drv/keyboard.S	/^do_self:$/;"	l
+do_signal	signal.c	/^void do_signal(long signr,long eax, long ebx, long ecx, long edx,$/;"	f
+do_stack_segment	traps.c	/^void do_stack_segment(long esp,long error_code)$/;"	f
+do_timer	sched.c	/^void do_timer(long cpl)$/;"	f
+do_tty_interrupt	chr_drv/tty_io.c	/^void do_tty_interrupt(int tty)$/;"	f
+drive_busy	blk_drv/hd.c	/^static int drive_busy(void)$/;"	f	file:
+e0	chr_drv/keyboard.S	/^e0:	.byte 0$/;"	l
+e0_e1	chr_drv/keyboard.S	/^e0_e1:	inb $0x61,%al$/;"	l
+end_func	chr_drv/keyboard.S	/^end_func:$/;"	l
+end_request	blk_drv/blk.h	/^extern inline void end_request(int uptodate)$/;"	f
+error_code	asm.s	/^error_code:$/;"	l
+errors	blk_drv/blk.h	/^	int errors;$/;"	m	struct:request
+find_empty_process	fork.c	/^int find_empty_process(void)$/;"	f
+floppy	blk_drv/floppy.c	/^static struct floppy_struct * floppy = floppy_type;$/;"	v	typeref:struct:floppy_struct	file:
+floppy_change	blk_drv/floppy.c	/^int floppy_change(unsigned int nr)$/;"	f
+floppy_deselect	blk_drv/floppy.c	/^void floppy_deselect(unsigned int nr)$/;"	f
+floppy_init	blk_drv/floppy.c	/^void floppy_init(void)$/;"	f
+floppy_off	sched.c	/^void floppy_off(unsigned int nr)$/;"	f
+floppy_on	sched.c	/^void floppy_on(unsigned int nr)$/;"	f
+floppy_on_interrupt	blk_drv/floppy.c	/^static void floppy_on_interrupt(void)$/;"	f	file:
+floppy_struct	blk_drv/floppy.c	/^static struct floppy_struct {$/;"	s	file:
+floppy_type	blk_drv/floppy.c	/^} floppy_type[] = {$/;"	v	typeref:struct:floppy_struct	file:
+flush	chr_drv/tty_ioctl.c	/^static void flush(struct tty_queue * queue)$/;"	f	file:
+fn	sched.c	/^	void (*fn)();$/;"	m	struct:timer_list	file:
+func	chr_drv/keyboard.S	/^func:$/;"	l
+func_table	chr_drv/keyboard.S	/^func_table:$/;"	l
+gap	blk_drv/floppy.c	/^	unsigned char gap,rate,spec1;$/;"	m	struct:floppy_struct	file:
+get_new	signal.c	/^static inline void get_new(char * from,char * to)$/;"	f	file:
+get_seg_byte	traps.c	22;"	d	file:
+get_seg_long	traps.c	28;"	d	file:
+get_termio	chr_drv/tty_ioctl.c	/^static int get_termio(struct tty_struct * tty, struct termio * termio)$/;"	f	file:
+get_termios	chr_drv/tty_ioctl.c	/^static int get_termios(struct tty_struct * tty, struct termios * termios)$/;"	f	file:
+gotoxy	chr_drv/console.c	/^static inline void gotoxy(unsigned int new_x,unsigned int new_y)$/;"	f	file:
+hd	blk_drv/hd.c	/^} hd[5*MAX_HD]={{0,0},};$/;"	v	typeref:struct:hd_struct	file:
+hd_i_struct	blk_drv/hd.c	/^struct hd_i_struct {$/;"	s	file:
+hd_info	blk_drv/hd.c	/^struct hd_i_struct hd_info[] = { HD_TYPE };$/;"	v	typeref:struct:hd_i_struct
+hd_info	blk_drv/hd.c	/^struct hd_i_struct hd_info[] = { {0,0,0,0,0,0},{0,0,0,0,0,0} };$/;"	v	typeref:struct:hd_i_struct
+hd_init	blk_drv/hd.c	/^void hd_init(void)$/;"	f
+hd_out	blk_drv/hd.c	/^static void hd_out(unsigned int drive,unsigned int nsect,unsigned int sect,$/;"	f	file:
+hd_struct	blk_drv/hd.c	/^static struct hd_struct {$/;"	s	file:
+head	blk_drv/floppy.c	/^	unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+head	blk_drv/floppy.c	/^static unsigned char head = 0;$/;"	v	file:
+head	blk_drv/hd.c	/^	int head,sect,cyl,wpcom,lzone,ctl;$/;"	m	struct:hd_i_struct	file:
+head	chr_drv/keyboard.S	/^head = 4$/;"	d
+head	chr_drv/rs_io.s	/^head = 4$/;"	d
+immoutb_p	blk_drv/floppy.c	50;"	d	file:
+init	chr_drv/serial.c	/^static void init(int port)$/;"	f	file:
+init_task	sched.c	/^static union task_union init_task = {INIT_TASK,};$/;"	v	typeref:union:task_union	file:
+insert_char	chr_drv/console.c	/^static void insert_char(void)$/;"	f	file:
+insert_line	chr_drv/console.c	/^static void insert_line(void)$/;"	f	file:
+interruptible_sleep_on	sched.c	/^void interruptible_sleep_on(struct task_struct **p)$/;"	f
+is_digit	vsprintf.c	16;"	d	file:
+jiffies	sched.c	/^	long jiffies;$/;"	m	struct:timer_list	file:
+jiffies	sched.c	/^long volatile jiffies=0;$/;"	v
+jmp_table	chr_drv/rs_io.s	/^jmp_table:$/;"	l
+kb_wait	chr_drv/keyboard.S	/^kb_wait:$/;"	l
+kernel_mktime	mktime.c	/^long kernel_mktime(struct tm * tm)$/;"	f
+key_map	chr_drv/keyboard.S	/^key_map:$/;"	l
+key_table	chr_drv/keyboard.S	/^key_table:$/;"	l
+kill_session	exit.c	/^static void kill_session(void)$/;"	f	file:
+last_pid	fork.c	/^long last_pid=0;$/;"	v
+last_task_used_math	sched.c	/^struct task_struct *last_task_used_math = NULL;$/;"	v	typeref:struct:task_struct
+leds	chr_drv/keyboard.S	/^leds:	.byte 2		\/* num-lock, caps, scroll-lock mode (nom-lock on) *\/$/;"	l
+lf	chr_drv/console.c	/^static void lf(void)$/;"	f	file:
+line_status	chr_drv/rs_io.s	/^line_status:$/;"	l
+ll_rw_block	blk_drv/ll_rw_blk.c	/^void ll_rw_block(int rw, struct buffer_head * bh)$/;"	f
+lock_buffer	blk_drv/ll_rw_blk.c	/^static inline void lock_buffer(struct buffer_head * bh)$/;"	f	file:
+lshift	chr_drv/keyboard.S	/^lshift:$/;"	l
+lzone	blk_drv/hd.c	/^	int head,sect,cyl,wpcom,lzone,ctl;$/;"	m	struct:hd_i_struct	file:
+make_request	blk_drv/ll_rw_blk.c	/^static void make_request(int major,int rw, struct buffer_head * bh)$/;"	f	file:
+math_emulate	math/math_emulate.c	/^void math_emulate(long edi, long esi, long ebp, long sys_call_ret,$/;"	f
+math_error	math/math_emulate.c	/^void math_error(void)$/;"	f
+math_state_restore	sched.c	/^void math_state_restore()$/;"	f
+minus	chr_drv/keyboard.S	/^minus:	cmpb $1,e0$/;"	l
+mode	chr_drv/keyboard.S	/^mode:	.byte 0		\/* caps, alt, ctrl and shift mode *\/$/;"	l
+modem_status	chr_drv/rs_io.s	/^modem_status:$/;"	l
+moff_timer	sched.c	/^static int moff_timer[4]={0,0,0,0};$/;"	v	file:
+mon_timer	sched.c	/^static int  mon_timer[4]={0,0,0,0};$/;"	v	file:
+month	mktime.c	/^static int month[12] = {$/;"	v	file:
+next	blk_drv/blk.h	/^	struct request * next;$/;"	m	struct:request	typeref:struct:request::request
+next	sched.c	/^	struct timer_list * next;$/;"	m	struct:timer_list	typeref:struct:timer_list::timer_list	file:
+next_timer	sched.c	/^} timer_list[TIME_REQUESTS], * next_timer = NULL;$/;"	v	typeref:struct:timer_list	file:
+no_error_code	asm.s	/^no_error_code:$/;"	l
+none	chr_drv/keyboard.S	/^none:	ret$/;"	l
+npar	chr_drv/console.c	/^static unsigned long	npar,par[NPAR];$/;"	v	file:
+nr_sectors	blk_drv/blk.h	/^	unsigned long nr_sectors;$/;"	m	struct:request
+nr_sects	blk_drv/hd.c	/^	long nr_sects;$/;"	m	struct:hd_struct	file:
+nr_system_calls	system_call.s	/^nr_system_calls = 72$/;"	d
+num	chr_drv/keyboard.S	/^num:	xorb $2,leds$/;"	l
+num_table	chr_drv/keyboard.S	/^num_table:$/;"	l
+number	vsprintf.c	/^static char * number(char * str, int num, int base, int size, int precision$/;"	f	file:
+ok_cur	chr_drv/keyboard.S	/^ok_cur:	shll $16,%eax$/;"	l
+ok_func	chr_drv/keyboard.S	/^ok_func:$/;"	l
+origin	chr_drv/console.c	/^static unsigned long	origin;		\/* Used for EGA\/VGA fast scroll	*\/$/;"	v	file:
+output_byte	blk_drv/floppy.c	/^static void output_byte(char byte)$/;"	f	file:
+panic	panic.c	/^volatile void panic(const char * s)$/;"	f
+par	chr_drv/console.c	/^static unsigned long	npar,par[NPAR];$/;"	v	file:
+port_read	blk_drv/hd.c	61;"	d	file:
+port_write	blk_drv/hd.c	64;"	d	file:
+pos	chr_drv/console.c	/^static unsigned long	pos;$/;"	v	file:
+printk	printk.c	/^int printk(const char *fmt, ...)$/;"	f
+priority	system_call.s	/^priority = 8$/;"	d
+proc_list	chr_drv/keyboard.S	/^proc_list = 12$/;"	d
+proc_list	chr_drv/rs_io.s	/^proc_list = 12$/;"	d
+put_queue	chr_drv/keyboard.S	/^put_queue:$/;"	l
+ques	chr_drv/console.c	/^static unsigned long	ques=0;$/;"	v	file:
+quotient	chr_drv/tty_ioctl.c	/^static unsigned short quotient[] = {$/;"	v	file:
+rate	blk_drv/floppy.c	/^	unsigned char gap,rate,spec1;$/;"	m	struct:floppy_struct	file:
+rd_init	blk_drv/ramdisk.c	/^long rd_init(long mem_start, int length)$/;"	f
+rd_length	blk_drv/ramdisk.c	/^int	rd_length = 0;$/;"	v
+rd_load	blk_drv/ramdisk.c	/^void rd_load(void)$/;"	f
+rd_start	blk_drv/ramdisk.c	/^char	*rd_start;$/;"	v
+read_char	chr_drv/rs_io.s	/^read_char:$/;"	l
+read_intr	blk_drv/hd.c	/^static void read_intr(void)$/;"	f	file:
+reboot	chr_drv/keyboard.S	/^reboot:$/;"	l
+recal_interrupt	blk_drv/floppy.c	/^static void recal_interrupt(void)$/;"	f	file:
+recal_intr	blk_drv/hd.c	/^static void recal_intr(void)$/;"	f	file:
+recalibrate	blk_drv/floppy.c	/^static int recalibrate = 0;$/;"	v	file:
+recalibrate	blk_drv/hd.c	/^static int recalibrate = 1;$/;"	v	file:
+recalibrate_floppy	blk_drv/floppy.c	/^static void recalibrate_floppy(void)$/;"	f	file:
+release	exit.c	/^void release(struct task_struct * p)$/;"	f
+rep_int	chr_drv/rs_io.s	/^rep_int:$/;"	l
+reply_buffer	blk_drv/floppy.c	/^static unsigned char reply_buffer[MAX_REPLIES];$/;"	v	file:
+request	blk_drv/blk.h	/^struct request {$/;"	s
+request	blk_drv/ll_rw_blk.c	/^struct request request[NR_REQUEST];$/;"	v	typeref:struct:request
+request_fn	blk_drv/blk.h	/^	void (*request_fn)(void);$/;"	m	struct:blk_dev_struct
+reschedule	system_call.s	/^reschedule:$/;"	l
+reset	blk_drv/floppy.c	/^static int reset = 0;$/;"	v	file:
+reset	blk_drv/hd.c	/^static int reset = 1;$/;"	v	file:
+reset_controller	blk_drv/hd.c	/^static void reset_controller(void)$/;"	f	file:
+reset_floppy	blk_drv/floppy.c	/^static void reset_floppy(void)$/;"	f	file:
+reset_hd	blk_drv/hd.c	/^static void reset_hd(int nr)$/;"	f	file:
+reset_interrupt	blk_drv/floppy.c	/^static void reset_interrupt(void)$/;"	f	file:
+respond	chr_drv/console.c	/^static void respond(struct tty_struct * tty)$/;"	f	file:
+restore_cur	chr_drv/console.c	/^static void restore_cur(void)$/;"	f	file:
+result	blk_drv/floppy.c	/^static int result(void)$/;"	f	file:
+ret_from_sys_call	system_call.s	/^ret_from_sys_call:$/;"	l
+ri	chr_drv/console.c	/^static void ri(void)$/;"	f	file:
+rs_addr	chr_drv/rs_io.s	/^rs_addr = 0$/;"	d
+rs_init	chr_drv/serial.c	/^void rs_init(void)$/;"	f
+rs_int	chr_drv/rs_io.s	/^rs_int:$/;"	l
+rs_write	chr_drv/serial.c	/^void rs_write(struct tty_struct * tty)$/;"	f
+rshift	chr_drv/keyboard.S	/^rshift:$/;"	l
+rw_interrupt	blk_drv/floppy.c	/^static void rw_interrupt(void)$/;"	f	file:
+sa_flags	system_call.s	/^sa_flags = 8$/;"	d
+sa_handler	system_call.s	/^sa_handler = 0$/;"	d
+sa_mask	system_call.s	/^sa_mask = 4$/;"	d
+sa_restorer	system_call.s	/^sa_restorer = 12$/;"	d
+save_cur	chr_drv/console.c	/^static void save_cur(void)$/;"	f	file:
+save_old	signal.c	/^static inline void save_old(char * from,char * to)$/;"	f	file:
+saved_x	chr_drv/console.c	/^static int saved_x=0;$/;"	v	file:
+saved_y	chr_drv/console.c	/^static int saved_y=0;$/;"	v	file:
+sched_init	sched.c	/^void sched_init(void)$/;"	f
+schedule	sched.c	/^void schedule(void)$/;"	f
+scr_end	chr_drv/console.c	/^static unsigned long	scr_end;	\/* Used for EGA\/VGA fast scroll	*\/$/;"	v	file:
+scrdown	chr_drv/console.c	/^static void scrdown(void)$/;"	f	file:
+scroll	chr_drv/keyboard.S	/^scroll:$/;"	l
+scrup	chr_drv/console.c	/^static void scrup(void)$/;"	f	file:
+sect	blk_drv/floppy.c	/^	unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+sect	blk_drv/hd.c	/^	int head,sect,cyl,wpcom,lzone,ctl;$/;"	m	struct:hd_i_struct	file:
+sector	blk_drv/blk.h	/^	unsigned long sector;$/;"	m	struct:request
+sector	blk_drv/floppy.c	/^static unsigned char sector = 0;$/;"	v	file:
+seek	blk_drv/floppy.c	/^static int seek = 0;$/;"	v	file:
+seek_interrupt	blk_drv/floppy.c	/^static void seek_interrupt(void)$/;"	f	file:
+seek_track	blk_drv/floppy.c	/^static unsigned char seek_track = 0;$/;"	v	file:
+selected	blk_drv/floppy.c	/^unsigned char selected = 0;$/;"	v
+send_break	chr_drv/tty_ioctl.c	/^static void send_break(struct tty_struct * tty)$/;"	f	file:
+send_sig	exit.c	/^static inline int send_sig(long sig,struct task_struct * p,int priv)$/;"	f	file:
+set_cursor	chr_drv/console.c	/^static inline void set_cursor(void)$/;"	f	file:
+set_e0	chr_drv/keyboard.S	/^set_e0:	movb $1,e0$/;"	l
+set_e1	chr_drv/keyboard.S	/^set_e1:	movb $2,e0$/;"	l
+set_leds	chr_drv/keyboard.S	/^set_leds:$/;"	l
+set_origin	chr_drv/console.c	/^static inline void set_origin(void)$/;"	f	file:
+set_termio	chr_drv/tty_ioctl.c	/^static int set_termio(struct tty_struct * tty, struct termio * termio)$/;"	f	file:
+set_termios	chr_drv/tty_ioctl.c	/^static int set_termios(struct tty_struct * tty, struct termios * termios)$/;"	f	file:
+setup_DMA	blk_drv/floppy.c	/^static void setup_DMA(void)$/;"	f	file:
+setup_rw_floppy	blk_drv/floppy.c	/^inline void setup_rw_floppy(void)$/;"	f
+shift_map	chr_drv/keyboard.S	/^shift_map:$/;"	l
+show_stat	sched.c	/^void show_stat(void)$/;"	f
+show_task	sched.c	/^void show_task(int nr,struct task_struct * p)$/;"	f
+sigaction	system_call.s	/^sigaction = 16		# MUST be 16 (=len of sigaction)$/;"	d
+signal	system_call.s	/^signal	= 12$/;"	d
+size	blk_drv/floppy.c	/^	unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+size	chr_drv/keyboard.S	/^size	= 1024		\/* must be a power of two ! And MUST be the same$/;"	d
+size	chr_drv/rs_io.s	/^size	= 1024				\/* must be power of two !$/;"	d
+skip_atoi	vsprintf.c	/^static int skip_atoi(const char **s)$/;"	f	file:
+sleep_if_empty	chr_drv/tty_io.c	/^static void sleep_if_empty(struct tty_queue * queue)$/;"	f	file:
+sleep_if_full	chr_drv/tty_io.c	/^static void sleep_if_full(struct tty_queue * queue)$/;"	f	file:
+sleep_on	sched.c	/^void sleep_on(struct task_struct **p)$/;"	f
+spec1	blk_drv/floppy.c	/^	unsigned char gap,rate,spec1;$/;"	m	struct:floppy_struct	file:
+stack	sched.c	/^	char stack[PAGE_SIZE];$/;"	m	union:task_union	file:
+stack_start	sched.c	/^	} stack_start = { & user_stack [PAGE_SIZE>>2] , 0x10 };$/;"	v	typeref:struct:__anon1
+start_sect	blk_drv/hd.c	/^	long start_sect;$/;"	m	struct:hd_struct	file:
+startup	chr_drv/rs_io.s	/^startup	= 256		\/* chars left in write queue when we restart it *\/$/;"	d
+startup_time	sched.c	/^long startup_time=0;$/;"	v
+state	chr_drv/console.c	/^static unsigned long	state=0;$/;"	v	file:
+state	system_call.s	/^state	= 0		# these are offsets into the task-struct.$/;"	d
+stretch	blk_drv/floppy.c	/^	unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+sys_acct	sys.c	/^int sys_acct()$/;"	f
+sys_alarm	sched.c	/^int sys_alarm(long seconds)$/;"	f
+sys_break	sys.c	/^int sys_break()$/;"	f
+sys_brk	sys.c	/^int sys_brk(unsigned long end_data_seg)$/;"	f
+sys_exit	exit.c	/^int sys_exit(int error_code)$/;"	f
+sys_ftime	sys.c	/^int sys_ftime()$/;"	f
+sys_getegid	sched.c	/^int sys_getegid(void)$/;"	f
+sys_geteuid	sched.c	/^int sys_geteuid(void)$/;"	f
+sys_getgid	sched.c	/^int sys_getgid(void)$/;"	f
+sys_getpgrp	sys.c	/^int sys_getpgrp(void)$/;"	f
+sys_getpid	sched.c	/^int sys_getpid(void)$/;"	f
+sys_getppid	sched.c	/^int sys_getppid(void)$/;"	f
+sys_getuid	sched.c	/^int sys_getuid(void)$/;"	f
+sys_gtty	sys.c	/^int sys_gtty()$/;"	f
+sys_kill	exit.c	/^int sys_kill(int pid,int sig)$/;"	f
+sys_lock	sys.c	/^int sys_lock()$/;"	f
+sys_mpx	sys.c	/^int sys_mpx()$/;"	f
+sys_nice	sched.c	/^int sys_nice(long increment)$/;"	f
+sys_pause	sched.c	/^int sys_pause(void)$/;"	f
+sys_phys	sys.c	/^int sys_phys()$/;"	f
+sys_prof	sys.c	/^int sys_prof()$/;"	f
+sys_ptrace	sys.c	/^int sys_ptrace()$/;"	f
+sys_rename	sys.c	/^int sys_rename()$/;"	f
+sys_setgid	sys.c	/^int sys_setgid(int gid)$/;"	f
+sys_setpgid	sys.c	/^int sys_setpgid(int pid, int pgid)$/;"	f
+sys_setregid	sys.c	/^int sys_setregid(int rgid, int egid)$/;"	f
+sys_setreuid	sys.c	/^int sys_setreuid(int ruid, int euid)$/;"	f
+sys_setsid	sys.c	/^int sys_setsid(void)$/;"	f
+sys_setuid	sys.c	/^int sys_setuid(int uid)$/;"	f
+sys_setup	blk_drv/hd.c	/^int sys_setup(void * BIOS)$/;"	f
+sys_sgetmask	signal.c	/^int sys_sgetmask()$/;"	f
+sys_sigaction	signal.c	/^int sys_sigaction(int signum, const struct sigaction * action,$/;"	f
+sys_signal	signal.c	/^int sys_signal(int signum, long handler, long restorer)$/;"	f
+sys_ssetmask	signal.c	/^int sys_ssetmask(int newmask)$/;"	f
+sys_stime	sys.c	/^int sys_stime(long * tptr)$/;"	f
+sys_stty	sys.c	/^int sys_stty()$/;"	f
+sys_time	sys.c	/^int sys_time(long * tloc)$/;"	f
+sys_times	sys.c	/^int sys_times(struct tms * tbuf)$/;"	f
+sys_ulimit	sys.c	/^int sys_ulimit()$/;"	f
+sys_umask	sys.c	/^int sys_umask(int mask)$/;"	f
+sys_uname	sys.c	/^int sys_uname(struct utsname * name)$/;"	f
+sys_waitpid	exit.c	/^int sys_waitpid(pid_t pid,unsigned long * stat_addr, int options)$/;"	f
+sysbeep	chr_drv/console.c	/^static void sysbeep(void)$/;"	f	file:
+sysbeepstop	chr_drv/console.c	/^void sysbeepstop(void)$/;"	f
+table_list	chr_drv/tty_io.c	/^struct tty_queue * table_list[]={$/;"	v	typeref:struct:tty_queue
+tail	chr_drv/keyboard.S	/^tail = 8$/;"	d
+tail	chr_drv/rs_io.s	/^tail = 8$/;"	d
+task	sched.c	/^	struct task_struct task;$/;"	m	union:task_union	typeref:struct:task_union::task_struct	file:
+task	sched.c	/^struct task_struct * task[NR_TASKS] = {&(init_task.task), };$/;"	v	typeref:struct:task_struct
+task_union	sched.c	/^union task_union {$/;"	u	file:
+tell_father	exit.c	/^static void tell_father(int pid)$/;"	f	file:
+ticks_to_floppy_on	sched.c	/^int ticks_to_floppy_on(unsigned int nr)$/;"	f
+timer_list	sched.c	/^static struct timer_list {$/;"	s	file:
+timer_list	sched.c	/^} timer_list[TIME_REQUESTS], * next_timer = NULL;$/;"	v	typeref:struct:timer_list	file:
+top	chr_drv/console.c	/^static unsigned long	top,bottom;$/;"	v	file:
+track	blk_drv/floppy.c	/^	unsigned int size, sect, head, track, stretch;$/;"	m	struct:floppy_struct	file:
+track	blk_drv/floppy.c	/^static unsigned char track = 0;$/;"	v	file:
+transfer	blk_drv/floppy.c	/^static void transfer(void)$/;"	f	file:
+trap_init	traps.c	/^void trap_init(void)$/;"	f
+tty_init	chr_drv/tty_io.c	/^void tty_init(void)$/;"	f
+tty_intr	chr_drv/tty_io.c	/^void tty_intr(struct tty_struct * tty, int mask)$/;"	f
+tty_ioctl	chr_drv/tty_ioctl.c	/^int tty_ioctl(int dev, int cmd, int arg)$/;"	f
+tty_read	chr_drv/tty_io.c	/^int tty_read(unsigned channel, char * buf, int nr)$/;"	f
+tty_table	chr_drv/tty_io.c	/^struct tty_struct tty_table[] = {$/;"	v	typeref:struct:tty_struct
+tty_write	chr_drv/tty_io.c	/^int tty_write(unsigned channel, char * buf, int nr)$/;"	f
+unalt	chr_drv/keyboard.S	/^unalt:	movb $0x10,%al$/;"	l
+uncaps	chr_drv/keyboard.S	/^uncaps:	andb $0x7f,mode$/;"	l
+unctrl	chr_drv/keyboard.S	/^unctrl:	movb $0x04,%al$/;"	l
+unexpected_floppy_interrupt	blk_drv/floppy.c	/^void unexpected_floppy_interrupt(void)$/;"	f
+unexpected_hd_interrupt	blk_drv/hd.c	/^void unexpected_hd_interrupt(void)$/;"	f
+unlock_buffer	blk_drv/blk.h	/^extern inline void unlock_buffer(struct buffer_head * bh)$/;"	f
+unlock_buffer	blk_drv/ll_rw_blk.c	/^static inline void unlock_buffer(struct buffer_head * bh)$/;"	f	file:
+unlshift	chr_drv/keyboard.S	/^unlshift:$/;"	l
+unrshift	chr_drv/keyboard.S	/^unrshift:$/;"	l
+user_stack	sched.c	/^long user_stack [ PAGE_SIZE>>2 ] ;$/;"	v
+verify_area	fork.c	/^void verify_area(void * addr,int size)$/;"	f
+video_erase_char	chr_drv/console.c	/^static unsigned short	video_erase_char;	\/* Char+Attrib to erase with	*\/$/;"	v	file:
+video_mem_end	chr_drv/console.c	/^static unsigned long	video_mem_end;		\/* End of video RAM (sort of)	*\/$/;"	v	file:
+video_mem_start	chr_drv/console.c	/^static unsigned long	video_mem_start;	\/* Start of video RAM		*\/$/;"	v	file:
+video_num_columns	chr_drv/console.c	/^static unsigned long	video_num_columns;	\/* Number of text columns	*\/$/;"	v	file:
+video_num_lines	chr_drv/console.c	/^static unsigned long	video_num_lines;	\/* Number of test lines		*\/$/;"	v	file:
+video_page	chr_drv/console.c	/^static unsigned char	video_page;		\/* Initial video page		*\/$/;"	v	file:
+video_port_reg	chr_drv/console.c	/^static unsigned short	video_port_reg;		\/* Video register select port	*\/$/;"	v	file:
+video_port_val	chr_drv/console.c	/^static unsigned short	video_port_val;		\/* Video register value port	*\/$/;"	v	file:
+video_size_row	chr_drv/console.c	/^static unsigned long	video_size_row;		\/* Bytes per row		*\/$/;"	v	file:
+video_type	chr_drv/console.c	/^static unsigned char	video_type;		\/* Type of display being used	*\/$/;"	v	file:
+vsprintf	vsprintf.c	/^int vsprintf(char *buf, const char *fmt, va_list args)$/;"	f
+wait_for_keypress	chr_drv/tty_io.c	/^void wait_for_keypress(void)$/;"	f
+wait_for_request	blk_drv/ll_rw_blk.c	/^struct task_struct * wait_for_request = NULL;$/;"	v	typeref:struct:task_struct
+wait_motor	sched.c	/^static struct task_struct * wait_motor[4] = {NULL,NULL,NULL,NULL};$/;"	v	typeref:struct:task_struct	file:
+wait_on_floppy_select	blk_drv/floppy.c	/^struct task_struct * wait_on_floppy_select = NULL;$/;"	v	typeref:struct:task_struct
+wait_until_sent	chr_drv/tty_ioctl.c	/^static void wait_until_sent(struct tty_struct * tty)$/;"	f	file:
+waiting	blk_drv/blk.h	/^	struct task_struct * waiting;$/;"	m	struct:request	typeref:struct:request::task_struct
+wake_up	sched.c	/^void wake_up(struct task_struct **p)$/;"	f
+win_result	blk_drv/hd.c	/^static int win_result(void)$/;"	f	file:
+wpcom	blk_drv/hd.c	/^	int head,sect,cyl,wpcom,lzone,ctl;$/;"	m	struct:hd_i_struct	file:
+write_buffer_empty	chr_drv/rs_io.s	/^write_buffer_empty:$/;"	l
+write_char	chr_drv/rs_io.s	/^write_char:$/;"	l
+write_intr	blk_drv/hd.c	/^static void write_intr(void)$/;"	f	file:
+x	chr_drv/console.c	/^static unsigned long	x,y;$/;"	v	file:
+y	chr_drv/console.c	/^static unsigned long	x,y;$/;"	v	file:

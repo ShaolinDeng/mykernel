@@ -1,0 +1,85 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BOOTSEG	bootsect.s	/^BOOTSEG  = 0x07c0			! original address of boot-sector$/;"	d
+ENDSEG	bootsect.s	/^ENDSEG   = SYSSEG + SYSSIZE		! where to stop loading$/;"	d
+INITSEG	bootsect.s	/^INITSEG  = 0x9000			! we move boot here - out of the way$/;"	d
+INITSEG	setup.s	/^INITSEG  = 0x9000	! we move boot here - out of the way$/;"	d
+L6	head.s	/^L6:$/;"	l
+ROOT_DEV	bootsect.s	/^ROOT_DEV = 0x306$/;"	d
+SETUPLEN	bootsect.s	/^SETUPLEN = 4				! nr of setup-sectors$/;"	d
+SETUPSEG	bootsect.s	/^SETUPSEG = 0x9020			! setup starts here$/;"	d
+SETUPSEG	setup.s	/^SETUPSEG = 0x9020	! this is the current segment$/;"	d
+SYSSEG	bootsect.s	/^SYSSEG   = 0x1000			! system loaded at 0x10000 (65536).$/;"	d
+SYSSEG	setup.s	/^SYSSEG   = 0x1000	! system loaded at 0x10000 (65536).$/;"	d
+SYSSIZE	bootsect.s	/^SYSSIZE = 0x3000$/;"	d
+_gdt	head.s	/^_gdt:	.quad 0x0000000000000000	\/* NULL descriptor *\/$/;"	l
+_idt	head.s	/^_idt:	.fill 256,8,0		# idt is uninitialized$/;"	l
+_pg_dir	head.s	/^_pg_dir:$/;"	l
+_tmp_floppy_area	head.s	/^_tmp_floppy_area:$/;"	l
+after_page_tables	head.s	/^after_page_tables:$/;"	l
+bad_rt	bootsect.s	/^bad_rt:	mov ax,#0$/;"	l
+begbss	bootsect.s	/^begbss:$/;"	l
+begbss	setup.s	/^begbss:$/;"	l
+begdata	bootsect.s	/^begdata:$/;"	l
+begdata	setup.s	/^begdata:$/;"	l
+begtext	bootsect.s	/^begtext:$/;"	l
+begtext	setup.s	/^begtext:$/;"	l
+boot_flag	bootsect.s	/^boot_flag:$/;"	l
+check_x87	head.s	/^check_x87:$/;"	l
+die	bootsect.s	/^die:	jne die			! es must be at 64kB boundary$/;"	l
+do_move	setup.s	/^do_move:$/;"	l
+empty_8042	setup.s	/^empty_8042:$/;"	l
+end_move	setup.s	/^end_move:$/;"	l
+endbss	bootsect.s	/^endbss:$/;"	l
+endbss	setup.s	/^endbss:$/;"	l
+enddata	bootsect.s	/^enddata:$/;"	l
+enddata	setup.s	/^enddata:$/;"	l
+endtext	bootsect.s	/^endtext:$/;"	l
+endtext	setup.s	/^endtext:$/;"	l
+entry	bootsect.s	/^entry start$/;"	l
+entry	setup.s	/^entry start$/;"	l
+gdt	setup.s	/^gdt:$/;"	l
+gdt_48	setup.s	/^gdt_48:$/;"	l
+gdt_descr	head.s	/^gdt_descr:$/;"	l
+go	bootsect.s	/^go:	mov	ax,cs$/;"	l
+head	bootsect.s	/^head:	.word 0			! current head$/;"	l
+idt_48	setup.s	/^idt_48:$/;"	l
+idt_descr	head.s	/^idt_descr:$/;"	l
+ignore_int	head.s	/^ignore_int:$/;"	l
+int_msg	head.s	/^int_msg:$/;"	l
+is_disk1	setup.s	/^is_disk1:$/;"	l
+kill_motor	bootsect.s	/^kill_motor:$/;"	l
+load_setup	bootsect.s	/^load_setup:$/;"	l
+msg1	bootsect.s	/^msg1:$/;"	l
+no_disk1	setup.s	/^no_disk1:$/;"	l
+ok1_read	bootsect.s	/^ok1_read:$/;"	l
+ok2_read	bootsect.s	/^ok2_read:$/;"	l
+ok3_read	bootsect.s	/^ok3_read:$/;"	l
+ok4_read	bootsect.s	/^ok4_read:$/;"	l
+ok_load_setup	bootsect.s	/^ok_load_setup:$/;"	l
+pg0	head.s	/^pg0:$/;"	l
+pg1	head.s	/^pg1:$/;"	l
+pg2	head.s	/^pg2:$/;"	l
+pg3	head.s	/^pg3:$/;"	l
+pop	bootsect.s	/^	pop dx$/;"	d
+push	bootsect.s	/^	push dx$/;"	d
+read_it	bootsect.s	/^read_it:$/;"	l
+read_track	bootsect.s	/^read_track:$/;"	l
+root_defined	bootsect.s	/^root_defined:$/;"	l
+root_dev	bootsect.s	/^root_dev:$/;"	l
+rp_read	bootsect.s	/^rp_read:$/;"	l
+rp_sidt	head.s	/^rp_sidt:$/;"	l
+sectors	bootsect.s	/^sectors:$/;"	l
+setup_gdt	head.s	/^setup_gdt:$/;"	l
+setup_idt	head.s	/^setup_idt:$/;"	l
+setup_paging	head.s	/^setup_paging:$/;"	l
+sread	bootsect.s	/^sread:	.word 1+SETUPLEN	! sectors read of current track$/;"	l
+start	bootsect.s	/^start:$/;"	l
+start	setup.s	/^start:$/;"	l
+startup_32	head.s	/^startup_32:$/;"	l
+track	bootsect.s	/^track:	.word 0			! current track$/;"	l
+undef_root	bootsect.s	/^undef_root:$/;"	l

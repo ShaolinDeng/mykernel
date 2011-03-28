@@ -1,0 +1,3 @@
+./bootsect.s
+./setup.s
+./head.s

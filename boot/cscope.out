@@ -1,0 +1,4720 @@
+cscope 15 $HOME/linux-0.11/boot -q 0000000576 0000017253
+	@bootsect.s
+
+2 ! 
+SYS_SIZE
+ 
+is
+ 
+the
+ 
+numbî
+ 
+of
+ 
+	$˛icks
+ (16 
+byãs
+Ë
+to
+ 
+be
+ 
+lﬂded
+.
+
+3 ! 0x3000 
+is
+ 0x30000 
+byãs
+ = 196
+kB
+, 
+m‹e
+ 
+th™
+ 
+íough
+ 
+cuºít
+
+
+4 ! 
+vîsi⁄s
+ 
+of
+ 
+löux
+
+
+6 
+SYSSIZE
+ = 0x3000
+
+8 ! 
+boŸ£˘
+.
+	`s
+ (
+C
+Ë1991 
+Löus
+ 
+T‹vÆds
+
+
+10 ! 
+boŸ£˘
+.
+s
+ 
+is
+ 
+lﬂded
+ 
+©
+ 0x7c00 
+by
+ 
+the
+ 
+bios
+-
+°¨tup
+ 
+routöes
+, 
+™d
+ 
+moves
+
+
+11 ! 
+i£lf
+ 
+out
+ 
+of
+ 
+the
+ 
+way
+ 
+to
+ 
+addªss
+ 0x90000, 
+™d
+ 
+jumps
+ 
+thîe
+.
+
+13 ! 
+It
+ 
+thí
+ 
+lﬂds
+ '£tup' 
+dúe˘ly
+ 
+a·î
+ 
+	`ô£lf
+ (0x90200), 
+™d
+ 
+the
+ 
+sy°em
+
+
+14 ! 
+©
+ 0x10000, 
+usög
+ 
+BIOS
+ 
+öãºu±s
+.
+
+16 ! 
+NOTE
+! 
+cuºíéy
+ 
+sy°em
+ 
+is
+ 
+©
+ 
+mo°
+ 8*65536 
+byãs
+ . 
+This
+ 
+should
+ 
+be
+ 
+no
+
+
+17 ! 
+¥obÀm
+, 
+eví
+ 
+ö
+ 
+the
+ 
+futuª
+. 
+I
+ 
+w™t
+ 
+to
+ 
+kìp
+ 
+ô
+ 
+sim∂e
+. 
+This
+ 512 
+kB
+
+
+18 ! 
+kî√l
+ 
+size
+ 
+should
+ 
+be
+ 
+íough
+, 
+e•ecüŒy
+ 
+as
+ 
+this
+ 
+d€¢
+'t containÅhe
+
+19 ! 
+buf„r
+ 
+ˇche
+ 
+as
+ 
+ö
+ 
+möix
+
+
+21 ! 
+The
+ 
+lﬂdî
+ 
+has
+ 
+bìn
+ 
+made
+ 
+as
+ 
+sim∂e
+á†
+possibÀ
+, 
+™d
+ 
+c⁄töuos
+
+
+22 ! 
+ªad
+ 
+îr‹s
+ 
+wûl
+ 
+ªsu…
+ 
+ö
+ 
+a
+ 
+unbªakabÀ
+ 
+lo›
+. 
+ReboŸ
+ 
+by
+ 
+h™d
+. 
+It
+
+
+23 ! 
+lﬂds
+ 
+¥ëty
+ 
+Á°
+ 
+by
+ 
+gëtög
+ 
+whﬁe
+ 
+£˘‹s
+ 
+©
+ 
+a
+ 
+time
+ 
+whíevî
+ 
+possibÀ
+.
+
+25 .
+globl
+ 
+begãxt
+, 
+begd©a
+, 
+begbss
+, 
+ídãxt
+, 
+ídd©a
+, 
+ídbss
+
+
+26 .
+ãxt
+
+
+27 
+begãxt
+:
+
+28 .
+d©a
+
+
+29 
+begd©a
+:
+
+30 .
+bss
+
+
+31 
+begbss
+:
+
+32 .
+ãxt
+
+
+34 
+SETUPLEN
+ = 4 ! 
+ƒ
+ 
+of
+ 
+£tup
+-
+£˘‹s
+
+
+35 
+BOOTSEG
+ = 0x07c0 ! 
+‹igöÆ
+ 
+addªss
+ 
+of
+ 
+boŸ
+-
+£˘‹
+
+
+36 
+INITSEG
+ = 0x9000 ! 
+we
+ 
+move
+ 
+boŸ
+ 
+hîe
+ - 
+out
+ 
+of
+ 
+the
+ 
+way
+
+
+37 
+SETUPSEG
+ = 0x9020 ! 
+£tup
+ 
+°¨ts
+ 
+hîe
+
+
+38 
+SYSSEG
+ = 0x1000 ! 
+sy°em
+ 
+lﬂded
+ 
+©
+ 0x10000 (65536).
+
+39 
+ENDSEG
+ = 
+SYSSEG
+ + 
+SYSSIZE
+ ! 
+whîe
+ 
+to
+ 
+°›
+ 
+lﬂdög
+
+
+41 ! 
+ROOT_DEV
+: 0x000 - 
+ßme
+ 
+ty≥
+ 
+of
+ 
+Ê›py
+ 
+as
+ 
+boŸ
+.
+
+42 ! 0x301 - 
+fú°
+ 
+∑πôi⁄
+ 
+⁄
+ fú° 
+drive
+ 
+ëc
+
+
+43 
+ROOT_DEV
+ = 0x306
+
+45 
+íåy
+ 
+°¨t
+
+
+46 
+°¨t
+:
+
+47 
+mov
+ 
+ax
+,#BOOTSEG
+
+48 
+mov
+ 
+ds
+,
+ax
+
+
+49 
+mov
+ 
+ax
+,#INITSEG
+
+50 
+mov
+ 
+es
+,
+ax
+
+
+51 
+mov
+ 
+cx
+,#256
+
+52 
+sub
+ 
+si
+,si
+
+53 
+sub
+ 
+di
+,di
+
+54 
+ªp
+
+
+55 
+movw
+
+
+56 
+jmpi
+ 
+go
+,
+INITSEG
+
+
+57 
+go
+: 
+mov
+ 
+ax
+,
+cs
+
+
+58 
+mov
+ 
+ds
+,
+ax
+
+
+59 
+mov
+ 
+es
+,
+ax
+
+
+60 ! 
+put
+ 
+°ack
+ 
+©
+ 0x9ff00.
+
+61 
+mov
+ 
+ss
+,
+ax
+
+
+62 
+mov
+ 
+•
+,#0
+xFF00
+ ! 
+¨bôøry
+ 
+vÆue
+ >>512
+
+64 ! 
+lﬂd
+ 
+the
+ 
+£tup
+-
+£˘‹s
+ 
+dúe˘ly
+ 
+a·î
+Åhê
+boŸblock
+.
+
+65 ! 
+NŸe
+ 
+th©
+ 'es' 
+is
+ 
+Æªady
+ 
+£t
+ 
+up
+.
+
+67 
+lﬂd_£tup
+:
+
+68 
+mov
+ 
+dx
+,#0
+x0000
+ ! 
+drive
+ 0, 
+hód
+ 0
+
+69 
+mov
+ 
+cx
+,#0
+x0002
+ ! 
+£˘‹
+ 2, 
+åack
+ 0
+
+70 
+mov
+ 
+bx
+,#0
+x0200
+ ! 
+addªss
+ = 512, 
+ö
+ 
+INITSEG
+
+
+71 
+mov
+ 
+ax
+,#0
+x0200
++
+SETUPLEN
+ ! 
+£rvi˚
+ 2, 
+ƒ
+ 
+of
+ 
+£˘‹s
+
+
+72 0x13 ! 
+ªad
+ 
+ô
+
+
+73 
+jnc
+ 
+ok_lﬂd_£tup
+ ! 
+ok
+ - 
+
+74 
+mov
+ 
+dx
+,#0
+x0000
+
+
+75 
+mov
+ 
+ax
+,#0
+x0000
+ ! 
+ª£t
+ 
+the
+ 
+diskëã
+
+
+77 
+j
+ 
+lﬂd_£tup
+
+
+79 
+ok_lﬂd_£tup
+:
+
+81 ! 
+Gë
+ 
+disk
+ 
+drive
+ 
+∑ømëîs
+, 
+•ecifiˇŒy
+ 
+ƒ
+ 
+of
+ 
+£˘‹s
+/
+åack
+
+
+83 
+mov
+ 
+dl
+,#0
+x00
+
+
+84 
+mov
+ 
+ax
+,#0
+x0800
+ ! 
+AH
+=8 
+is
+ 
+gë
+ 
+drive
+ 
+∑ømëîs
+
+
+86 
+mov
+ 
+ch
+,#0
+x00
+
+
+87 
+£g
+ 
+cs
+
+
+88 
+mov
+ 
+£˘‹s
+,
+cx
+
+
+89 
+mov
+ 
+ax
+,#INITSEG
+
+90 
+mov
+ 
+es
+,
+ax
+
+
+92 ! 
+Pröt
+ 
+some
+ 
+ö™e
+ 
+mesßge
+
+
+94 
+mov
+ 
+ah
+,#0
+x03
+ ! 
+ªad
+ 
+curs‹
+ 
+pos
+
+
+95 
+x‹
+ 
+bh
+,bh
+
+98 
+mov
+ 
+cx
+,#24
+
+99 
+mov
+ 
+bx
+,#0
+x0007
+ ! 
+∑ge
+ 0, 
+©åibuã
+ 7 (
+n‹mÆ
+)
+
+100 
+mov
+ 
+bp
+,#msg1
+
+101 
+mov
+ 
+ax
+,#0
+x1301
+ ! 
+wrôe
+ 
+°rög
+, 
+move
+ 
+curs‹
+
+
+104 ! 
+ok
+, 
+we
+'ve writtenÅhe message,Çow
+
+105 ! 
+we
+ 
+w™t
+ 
+to
+ 
+lﬂd
+ 
+the
+ 
+	$sy°em
+ (
+©
+ 0x10000)
+
+107 
+mov
+ 
+ax
+,#SYSSEG
+
+108 
+mov
+ 
+es
+,
+ax
+ ! 
+£gmít
+ 
+of
+ 0x010000
+
+109 
+ˇŒ
+ 
+ªad_ô
+
+
+110 
+ˇŒ
+ 
+kûl_mŸ‹
+
+
+112 ! 
+A·î
+ 
+th©
+ 
+we
+ 
+check
+ 
+which
+ 
+roŸ
+-
+devi˚
+ 
+to
+ 
+u£
+. 
+If
+ 
+the
+ devi˚ 
+is
+
+
+113 ! 
+	`deföed
+ (!0), 
+nŸhög
+ 
+is
+ 
+d⁄e
+ 
+™d
+ 
+the
+ 
+giví
+ 
+devi˚
+ i†
+u£d
+.
+
+114 ! 
+Othîwi£
+, 
+eôhî
+ /
+dev
+/
+	$PS0
+ (2,28Ë
+‹
+ /
+dev
+/
+	`©0
+ (2,8), 
+dïídög
+
+
+115 ! 
+⁄
+ 
+the
+ 
+numbî
+ 
+of
+ 
+£˘‹s
+ 
+th©
+Åhê
+BIOS
+ 
+ªp‹ts
+ 
+cuºíéy
+.
+
+117 
+£g
+ 
+cs
+
+
+118 
+mov
+ 
+ax
+,
+roŸ_dev
+
+
+119 
+cmp
+ 
+ax
+,#0
+
+120 
+j√
+ 
+roŸ_deföed
+
+
+121 
+£g
+ 
+cs
+
+
+122 
+mov
+ 
+bx
+,
+£˘‹s
+
+
+123 
+mov
+ 
+ax
+,#0
+x0208
+ ! /
+dev
+/
+ps0
+ - 1.2
+Mb
+
+
+124 
+cmp
+ 
+bx
+,#15
+
+125 
+je
+ 
+roŸ_deföed
+
+
+126 
+mov
+ 
+ax
+,#0
+x021c
+ ! /
+dev
+/
+PS0
+ - 1.44
+Mb
+
+
+127 
+cmp
+ 
+bx
+,#18
+
+128 
+je
+ 
+roŸ_deföed
+
+
+129 
+undef_roŸ
+:
+
+130 
+jmp
+ 
+undef_roŸ
+
+
+131 
+roŸ_deföed
+:
+
+132 
+£g
+ 
+cs
+
+
+133 
+mov
+ 
+roŸ_dev
+,
+ax
+
+
+135 ! 
+a·î
+ 
+	`th©
+ (
+evîytög
+ 
+lﬂded
+), 
+we
+ 
+jump
+ 
+to
+
+
+136 ! 
+the
+ 
+£tup
+-
+routöe
+ 
+lﬂded
+ 
+dúe˘ly
+ 
+a·î
+
+
+137 ! 
+the
+ 
+boŸblock
+:
+
+139 
+jmpi
+ 0,
+SETUPSEG
+
+
+141 ! 
+This
+ 
+routöe
+ 
+lﬂds
+ 
+the
+ 
+sy°em
+ 
+©
+ 
+addªss
+ 0x10000, 
+makög
+ 
+suª
+
+
+142 ! 
+no
+ 64
+kB
+ 
+bound¨õs
+ 
+¨e
+ 
+¸os£d
+. 
+We
+ 
+åy
+ 
+to
+ 
+lﬂd
+ 
+ô
+ 
+as
+ 
+Á°
+ás
+
+143 ! 
+possibÀ
+, 
+lﬂdög
+ 
+whﬁe
+ 
+åacks
+ 
+whíevî
+ 
+we
+ 
+ˇn
+.
+
+145 ! 
+ö
+: 
+es
+ - 
+°¨tög
+ 
+addªss
+ 
+	`£gmít
+ (
+n‹mÆly
+ 0x1000)
+
+147 
+§ód
+: .
+w‹d
+ 1+
+SETUPLEN
+ ! 
+£˘‹s
+ 
+ªad
+ 
+of
+ 
+cuºít
+ 
+åack
+
+
+148 
+hód
+: .
+w‹d
+ 0 ! 
+cuºít
+ head
+
+149 
+åack
+: .
+w‹d
+ 0 ! 
+cuºít
+Årack
+
+151 
+ªad_ô
+:
+
+152 
+mov
+ 
+ax
+,
+es
+
+
+153 
+ã°
+ 
+ax
+,#0
+x0fff
+
+
+154 
+dõ
+: 
+j√
+ dõ ! 
+es
+ 
+mu°
+ 
+be
+ 
+©
+ 64
+kB
+ 
+bound¨y
+
+
+155 
+x‹
+ 
+bx
+,bx ! bx 
+is
+ 
+°¨tög
+ 
+addªss
+ 
+wôhö
+ 
+£gmít
+
+
+156 
+Ω_ªad
+:
+
+157 
+mov
+ 
+ax
+,
+es
+
+
+158 
+cmp
+ 
+ax
+,#ENDSEG ! 
+have
+ 
+we
+ 
+lﬂded
+ 
+Æl
+ 
+yë
+?
+
+159 
+jb
+ 
+ok1_ªad
+
+
+160 
+ªt
+
+
+161 
+ok1_ªad
+:
+
+162 
+£g
+ 
+cs
+
+
+163 
+mov
+ 
+ax
+,
+£˘‹s
+
+
+164 
+sub
+ 
+ax
+,
+§ód
+
+
+165 
+mov
+ 
+cx
+,
+ax
+
+
+166 
+shl
+ 
+cx
+,#9
+
+167 
+add
+ 
+cx
+,
+bx
+
+
+168 
+jnc
+ 
+ok2_ªad
+
+
+169 
+je
+ 
+ok2_ªad
+
+
+170 
+x‹
+ 
+ax
+,ax
+
+171 
+sub
+ 
+ax
+,
+bx
+
+
+172 
+shr
+ 
+ax
+,#9
+
+173 
+ok2_ªad
+:
+
+174 
+ˇŒ
+ 
+ªad_åack
+
+
+175 
+mov
+ 
+cx
+,
+ax
+
+
+176 
+add
+ 
+ax
+,
+§ód
+
+
+177 
+£g
+ 
+cs
+
+
+178 
+cmp
+ 
+ax
+,
+£˘‹s
+
+
+179 
+j√
+ 
+ok3_ªad
+
+
+180 
+mov
+ 
+ax
+,#1
+
+181 
+sub
+ 
+ax
+,
+hód
+
+
+182 
+j√
+ 
+ok4_ªad
+
+
+183 
+öc
+ 
+åack
+
+
+184 
+ok4_ªad
+:
+
+185 
+mov
+ 
+hód
+,
+ax
+
+
+186 
+x‹
+ 
+ax
+,ax
+
+187 
+ok3_ªad
+:
+
+188 
+mov
+ 
+§ód
+,
+ax
+
+
+189 
+shl
+ 
+cx
+,#9
+
+190 
+add
+ 
+bx
+,
+cx
+
+
+191 
+jnc
+ 
+Ω_ªad
+
+
+192 
+mov
+ 
+ax
+,
+es
+
+
+193 
+add
+ 
+ax
+,#0
+x1000
+
+
+194 
+mov
+ 
+es
+,
+ax
+
+
+195 
+x‹
+ 
+bx
+,bx
+
+196 
+jmp
+ 
+Ω_ªad
+
+
+198 
+ªad_åack
+:
+
+199 
+push
+ 
+ax
+
+
+200 
+push
+ 
+bx
+
+
+201 
+push
+ 
+cx
+
+
+202 
+push
+ 
+dx
+
+
+203 
+mov
+ 
+dx
+,
+åack
+
+
+204 
+mov
+ 
+cx
+,
+§ód
+
+
+205 
+öc
+ 
+cx
+
+
+206 
+mov
+ 
+ch
+,
+dl
+
+
+207 
+mov
+ 
+dx
+,
+hód
+
+
+208 
+mov
+ 
+dh
+,
+dl
+
+
+209 
+mov
+ 
+dl
+,#0
+
+210 
+™d
+ 
+dx
+,#0
+x0100
+
+
+211 
+mov
+ 
+ah
+,#2
+
+213 
+jc
+ 
+bad_π
+
+
+214 
+p›
+ 
+dx
+
+
+215 
+p›
+ 
+cx
+
+
+216 
+p›
+ 
+bx
+
+
+217 
+p›
+ 
+ax
+
+
+218 
+ªt
+
+
+219 
+bad_π
+: 
+mov
+ 
+ax
+,#0
+
+220 
+mov
+ 
+dx
+,#0
+
+222 
+p›
+ 
+dx
+
+
+223 
+p›
+ 
+cx
+
+
+224 
+p›
+ 
+bx
+
+
+225 
+p›
+ 
+ax
+
+
+226 
+jmp
+ 
+ªad_åack
+
+
+233 
+kûl_mŸ‹
+:
+
+234 
+push
+ 
+dx
+
+
+235 
+mov
+ 
+dx
+,#0
+x3f2
+
+
+236 
+mov
+ 
+Æ
+,#0
+
+237 
+outb
+
+
+238 
+p›
+ 
+dx
+
+
+239 
+ªt
+
+
+241 
+£˘‹s
+:
+
+242 .
+w‹d
+ 0
+
+244 
+msg1
+:
+
+245 .
+byã
+ 13,10
+
+246 .
+ascii
+ "Loading system ..."
+
+247 .
+byã
+ 13,10,13,10
+
+249 .
+‹g
+ 508
+
+250 
+roŸ_dev
+:
+
+251 .
+w‹d
+ 
+ROOT_DEV
+
+
+252 
+boŸ_Êag
+:
+
+253 .
+w‹d
+ 0xAA55
+
+255 .
+ãxt
+
+
+256 
+ídãxt
+:
+
+257 .
+d©a
+
+
+258 
+ídd©a
+:
+
+259 .
+bss
+
+
+260 
+ídbss
+:
+
+	@head.s
+
+14 .
+	gãxt
+
+
+15 .
+globl
+ 
+	g_idt
+,
+	g_gdt
+,
+	g_pg_dú
+,
+_tmp_Ê›py_¨ó
+
+
+16 
+	g_pg_dú
+:
+
+17 
+°¨tup_32
+:
+
+18 
+movl
+ 
+$0x10
+,%
+óx
+
+
+19 
+	gmov
+ %
+	gax
+,%
+ds
+
+
+20 
+	gmov
+ %
+	gax
+,%
+es
+
+
+21 
+	gmov
+ %
+	gax
+,%
+fs
+
+
+22 
+	gmov
+ %
+	gax
+,%
+gs
+
+
+23 
+lss
+ 
+	g_°ack_°¨t
+,%
+e•
+
+
+24 
+ˇŒ
+ 
+£tup_idt
+
+
+25 
+ˇŒ
+ 
+£tup_gdt
+
+
+26 
+movl
+ 
+	g$0x10
+,%
+	góx
+ #ªlﬂd 
+Æl
+ 
+the
+ 
+£gmít
+ 
+ªgi°îs
+
+
+27 
+	gmov
+ %
+	gax
+,%
+	gds
+ #a·î 
+ch™gög
+ 
+	ggdt
+. 
+CS
+ 
+was
+ 
+Æªady
+
+
+28 
+	gmov
+ %
+	gax
+,%
+	ges
+ #ªlﬂded 
+	gö
+ 'setup_gdt'
+
+29 
+	gmov
+ %
+	gax
+,%
+fs
+
+
+30 
+	gmov
+ %
+	gax
+,%
+gs
+
+
+31 
+lss
+ 
+	g_°ack_°¨t
+,%
+e•
+
+
+32 
+	gx‹l
+ %
+	góx
+,%eax
+
+33 1: 
+ö˛
+ %
+óx
+ #check 
+th©
+ 
+A20
+ 
+ªÆly
+ 
+IS
+ 
+íabÀd
+
+
+34 
+movl
+ %
+óx
+,0x000000 #lo› 
+f‹evî
+ 
+ô
+ 
+	gi¢
+'t
+
+35 
+	gcm∂
+ %
+	góx
+,0x100000
+
+36 
+	gje
+ 1b
+
+43 
+	gmovl
+ %
+	g¸0
+,%
+	góx
+ #check 
+m©h
+ 
+chù
+
+
+44 
+™dl
+ 
+	g$0x80000011
+,%
+	góx
+ #Savê
+	gPG
+,
+	gPE
+,
+ET
+
+
+46 
+‹l
+ 
+	g$2
+,%
+	góx
+ #£à
+MP
+
+
+47 
+	gmovl
+ %
+	góx
+,%
+¸0
+
+
+48 
+ˇŒ
+ 
+check_x87
+
+
+49 
+jmp
+ 
+a·î_∑ge_èbÀs
+
+
+54 
+	gcheck_x87
+:
+
+55 
+‚öô
+
+
+56 
+f°sw
+ %
+ax
+
+
+57 
+cmpb
+ 
+$0
+,%
+Æ
+
+
+58 
+	gje
+ 1f
+
+59 
+	gmovl
+ %
+	g¸0
+,%
+óx
+
+
+60 
+x‹l
+ 
+	g$6
+,%
+óx
+
+
+61 
+	gmovl
+ %
+	góx
+,%
+¸0
+
+
+62 
+	gªt
+
+
+63 .
+	gÆign
+ 2
+
+64 1: .
+byã
+ 0xDB,0xE4
+
+65 
+ªt
+
+
+78 
+	g£tup_idt
+:
+
+79 
+Àa
+ 
+ign‹e_öt
+,%
+edx
+
+
+80 
+movl
+ 
+	g$0x00080000
+,%
+óx
+
+
+81 
+	gmovw
+ %
+	gdx
+,%
+ax
+
+
+82 
+movw
+ 
+	g$0x8E00
+,%
+dx
+
+
+84 
+Àa
+ 
+	g_idt
+,%
+edi
+
+
+85 
+mov
+ 
+	g$256
+,%
+ecx
+
+
+86 
+	gΩ_sidt
+:
+
+87 
+movl
+ %
+óx
+,(%
+	gedi
+)
+
+88 
+	gmovl
+ %
+	gedx
+,4(%
+	gedi
+)
+
+89 
+addl
+ 
+	g$8
+,%
+edi
+
+
+90 
+	gdec
+ %
+ecx
+
+
+91 
+j√
+ 
+Ω_sidt
+
+
+92 
+lidt
+ 
+idt_des¸
+
+
+93 
+ªt
+
+
+105 
+	g£tup_gdt
+:
+
+106 
+lgdt
+ 
+gdt_des¸
+
+
+107 
+ªt
+
+
+114 .
+‹g
+ 0x1000
+
+115 
+pg0
+:
+
+117 .
+‹g
+ 0x2000
+
+118 
+pg1
+:
+
+120 .
+‹g
+ 0x3000
+
+121 
+pg2
+:
+
+123 .
+‹g
+ 0x4000
+
+124 
+pg3
+:
+
+126 .
+‹g
+ 0x5000
+
+132 
+_tmp_Ê›py_¨ó
+:
+
+133 .
+fûl
+ 1024,1,0
+
+135 
+	ga·î_∑ge_èbÀs
+:
+
+136 
+pushl
+ 
+$0
+ #The£ 
+¨e
+ 
+the
+ 
+∑ømëîs
+ 
+to
+ 
+maö
+ :-)
+
+137 
+pushl
+ 
+$0
+
+
+138 
+pushl
+ 
+$0
+
+
+139 
+pushl
+ 
+$L6
+ #ªtu∫ 
+addªss
+ 
+maö
+, 
+ô
+ 
+decides
+ 
+	gto
+.
+
+140 
+pushl
+ 
+$_maö
+
+
+141 
+jmp
+ 
+£tup_∑gög
+
+
+142 
+	gL6
+:
+
+143 
+jmp
+ 
+L6
+ #maö 
+should
+ 
+√vî
+  
+hîe
+, 
+	gbut
+
+
+144 #ju° 
+ö
+ , 
+we
+ 
+know
+ 
+wh©
+ 
+h≠≥ns
+.
+
+147 
+	göt_msg
+:
+
+148 .
+asciz
+ "Unknown interrupt\n\r"
+
+149 .
+Æign
+ 2
+
+150 
+ign‹e_öt
+:
+
+151 
+pushl
+ %
+óx
+
+
+152 
+pushl
+ %
+ecx
+
+
+153 
+pushl
+ %
+edx
+
+
+154 
+push
+ %
+ds
+
+
+155 
+push
+ %
+es
+
+
+156 
+push
+ %
+fs
+
+
+157 
+movl
+ 
+$0x10
+,%
+óx
+
+
+158 
+	gmov
+ %
+	gax
+,%
+ds
+
+
+159 
+	gmov
+ %
+	gax
+,%
+es
+
+
+160 
+	gmov
+ %
+	gax
+,%
+fs
+
+
+161 
+pushl
+ 
+$öt_msg
+
+
+162 
+ˇŒ
+ 
+_¥ötk
+
+
+163 
+	gp›l
+ %
+óx
+
+
+164 
+	gp›
+ %
+fs
+
+
+165 
+	gp›
+ %
+es
+
+
+166 
+	gp›
+ %
+ds
+
+
+167 
+	gp›l
+ %
+edx
+
+
+168 
+	gp›l
+ %
+ecx
+
+
+169 
+	gp›l
+ %
+óx
+
+
+170 
+	gúë
+
+
+197 .
+	gÆign
+ 2
+
+198 
+	g£tup_∑gög
+:
+
+199 
+movl
+ 
+$1024
+*5,%
+ecx
+
+
+200 
+	gx‹l
+ %
+	góx
+,%
+óx
+
+
+201 
+	gx‹l
+ %
+	gedi
+,%
+edi
+
+
+202 
+	g˛d
+;
+	gªp
+;
+°o¶
+
+
+203 
+movl
+ 
+	g$pg0
++7,
+_pg_dú
+
+
+204 
+movl
+ 
+	g$pg1
++7,
+	g_pg_dú
++4
+
+205 
+movl
+ 
+	g$pg2
++7,
+	g_pg_dú
++8
+
+206 
+movl
+ 
+	g$pg3
++7,
+	g_pg_dú
++12
+
+207 
+movl
+ 
+	g$pg3
++4092,%
+edi
+
+
+208 
+movl
+ 
+	g$0xfff007
+,%
+óx
+
+
+209 
+	g°d
+
+
+210 1: 
+°o¶
+
+
+211 
+subl
+ 
+$0x1000
+,%
+óx
+
+
+212 
+	gjge
+ 1b
+
+213 
+	gx‹l
+ %
+	góx
+,%
+óx
+
+
+214 
+	gmovl
+ %
+	góx
+,%
+¸3
+
+
+215 
+	gmovl
+ %
+	g¸0
+,%
+óx
+
+
+216 
+‹l
+ 
+	g$0x80000000
+,%
+óx
+
+
+217 
+	gmovl
+ %
+	góx
+,%
+¸0
+
+
+218 
+	gªt
+
+
+220 .
+	gÆign
+ 2
+
+221 .
+	gw‹d
+ 0
+
+222 
+	gidt_des¸
+:
+
+223 .
+w‹d
+ 256*8-1 #idà
+c⁄èös
+ 256 
+íåõs
+
+
+224 .
+_idt
+
+
+225 .
+Æign
+ 2
+
+226 .
+w‹d
+ 0
+
+227 
+gdt_des¸
+:
+
+228 .
+w‹d
+ 256*8-1 #sÿ
+d€s
+ 
+gdt
+ (
+nŸ
+ 
+th©
+Åhat'sány
+
+229 .
+_gdt
+ #magi¯
+numbî
+, 
+but
+ 
+ô
+ 
+w‹ks
+ 
+me
+ :^)
+
+231 .
+Æign
+ 3
+
+232 
+_idt
+: .
+fûl
+ 256,8,0 #idà
+is
+ 
+unöôülized
+
+
+234 
+	g_gdt
+: .
+quad
+ 0x0000000000000000
+
+235 .
+quad
+ 0x00c09a0000000fff
+
+236 .
+quad
+ 0x00c0920000000fff
+
+237 .
+quad
+ 0x0000000000000000
+
+238 .
+fûl
+ 252,8,0
+
+	@setup.s
+
+2 ! 
+	g£tup
+.
+s
+ (
+C
+Ë1991 
+Löus
+ 
+	gT‹vÆds
+
+
+4 ! 
+	g£tup
+.
+s
+ 
+is
+ 
+ª•⁄sibÀ
+ 
+gëtög
+ 
+the
+ 
+sy°em
+ 
+d©a
+ 
+‰om
+Åhê
+	gBIOS
+,
+
+5 ! 
+™d
+ 
+puâög
+ 
+them
+ 
+öto
+ 
+the
+ 
+≠¥›rüã
+ 
+∂a˚s
+ 
+ö
+ 
+sy°em
+ 
+	gmem‹y
+.
+
+6 ! 
+bŸh
+ 
+	g£tup
+.
+s
+ 
+™d
+ 
+sy°em
+ 
+has
+ 
+bìn
+ 
+lﬂded
+ 
+by
+ 
+the
+ 
+	gboŸblock
+.
+
+8 ! 
+This
+ 
+code
+ 
+asks
+ 
+the
+ 
+bios
+ 
+	gmem‹y
+/
+	gdisk
+/
+Ÿhî
+ 
+	g∑ømëîs
+, 
+	g™d
+
+
+9 ! 
+puts
+ 
+them
+ 
+ö
+ 
+	ga
+ "ß„" 
+	g∂a˚
+: 0x90000-0x901FF, 
+õ
+ 
+whîe
+ 
+	gthe
+
+
+10 ! 
+	gboŸ
+-
+block
+ 
+u£d
+ 
+to
+ 
+	gbe
+. 
+It
+ 
+is
+ 
+thí
+ 
+up
+Åÿ
+the
+ 
+¥Ÿe˘ed
+ 
+	gmode
+
+
+11 ! 
+sy°em
+ 
+to
+ 
+ªad
+ 
+them
+ 
+‰om
+ 
+thîe
+ 
+bef‹e
+ 
+the
+ 
+¨ó
+ 
+is
+ 
+	govîwrôãn
+
+
+12 ! 
+	gbuf„r
+-
+	gblocks
+.
+
+15 ! 
+	gNOTE
+! 
+The£
+ 
+had
+ 
+bëãr
+ 
+be
+ 
+the
+ 
+ßme
+ 
+as
+ 
+ö
+ 
+	gboŸ£˘
+.
+	gs
+!
+
+17 
+	gINITSEG
+ = 0x9000 ! 
+we
+ 
+move
+ 
+boŸ
+ 
+hîe
+ - 
+out
+ 
+of
+ 
+the
+ 
+way
+
+
+18 
+SYSSEG
+ = 0x1000 ! 
+sy°em
+ 
+lﬂded
+ 
+©
+ 0x10000 (65536).
+
+19 
+SETUPSEG
+ = 0x9020 ! 
+this
+ 
+is
+ 
+the
+ 
+cuºít
+ 
+£gmít
+
+
+21 .
+globl
+ 
+begãxt
+, 
+	gbegd©a
+, 
+	gbegbss
+, 
+	gídãxt
+, 
+	gídd©a
+, 
+	gídbss
+
+
+22 .
+ãxt
+
+
+23 
+	gbegãxt
+:
+
+24 .
+d©a
+
+
+25 
+begd©a
+:
+
+26 .
+bss
+
+
+27 
+begbss
+:
+
+28 .
+ãxt
+
+
+30 
+íåy
+ 
+°¨t
+
+
+31 
+°¨t
+:
+
+33 ! 
+ok
+, 
+the
+ 
+ªad
+ 
+wít
+ 
+wñl
+ 
+so
+ 
+we
+ 
+gë
+ 
+cuºít
+ 
+curs‹
+ 
+posôi⁄
+ 
+™d
+ 
+ßve
+ 
+ô
+ 
+
+34 ! 
+	gpo°îôy
+.
+
+36 
+mov
+ 
+	gax
+,#INITSEG ! 
+this
+ 
+is
+ 
+d⁄e
+ 
+ö
+ 
+boŸ£˘
+ 
+	gÆªady
+, 
+	gbut
+...
+
+37 
+mov
+ 
+	gds
+,
+ax
+
+
+38 
+mov
+ 
+	gah
+,#0
+	gx03
+ ! 
+ªad
+ 
+curs‹
+ 
+pos
+
+
+39 
+x‹
+ 
+	gbh
+,
+bh
+
+
+40 0x10 ! 
+ßve
+ 
+ô
+ 
+ö
+ 
+known
+ 
+	g∂a˚
+, 
+c⁄_öô
+ 
+„tches
+
+
+41 
+	gmov
+ [0],
+	gdx
+ ! 
+ô
+ 
+	g‰om
+ 0x90000.
+
+43 ! 
+Gë
+ 
+mem‹y
+ 
+	$size
+ (
+exãnded
+ 
+mem
+, 
+kB
+)
+
+45 
+mov
+ 
+ah
+,#0
+x88
+
+
+47 
+mov
+ [2],
+ax
+
+
+49 ! 
+Gë
+ 
+video
+-
+ˇrd
+ 
+d©a
+:
+
+51 
+mov
+ 
+ah
+,#0
+x0f
+
+
+53 
+mov
+ [4],
+bx
+ ! 
+bh
+ = 
+di•œy
+ 
+∑ge
+
+
+54 
+mov
+ [6],
+ax
+ ! 
+Æ
+ = 
+video
+ 
+mode
+, 
+ah
+ = 
+wödow
+ 
+width
+
+
+56 ! 
+check
+ 
+EGA
+/
+VGA
+ 
+™d
+ 
+some
+ 
+c⁄fig
+ 
+∑ømëîs
+
+
+58 
+mov
+ 
+ah
+,#0
+x12
+
+
+59 
+mov
+ 
+bl
+,#0
+x10
+
+
+61 
+mov
+ [8],
+ax
+
+
+62 
+mov
+ [10],
+bx
+
+
+63 
+mov
+ [12],
+cx
+
+
+65 ! 
+Gë
+ 
+hd0
+ 
+d©a
+
+
+67 
+mov
+ 
+ax
+,#0
+x0000
+
+
+68 
+mov
+ 
+ds
+,
+ax
+
+
+69 
+lds
+ 
+si
+,[4*0x41]
+
+70 
+mov
+ 
+ax
+,#INITSEG
+
+71 
+mov
+ 
+es
+,
+ax
+
+
+72 
+mov
+ 
+di
+,#0
+x0080
+
+
+73 
+mov
+ 
+cx
+,#0
+x10
+
+
+74 
+ªp
+
+
+75 
+movsb
+
+
+77 ! 
+Gë
+ 
+hd1
+ 
+d©a
+
+
+79 
+mov
+ 
+ax
+,#0
+x0000
+
+
+80 
+mov
+ 
+ds
+,
+ax
+
+
+81 
+lds
+ 
+si
+,[4*0x46]
+
+82 
+mov
+ 
+ax
+,#INITSEG
+
+83 
+mov
+ 
+es
+,
+ax
+
+
+84 
+mov
+ 
+di
+,#0
+x0090
+
+
+85 
+mov
+ 
+cx
+,#0
+x10
+
+
+86 
+ªp
+
+
+87 
+movsb
+
+
+89 ! 
+Check
+ 
+th©
+ 
+thîe
+ 
+IS
+ 
+a
+ 
+hd1
+ :-)
+
+91 
+mov
+ 
+ax
+,#0
+x01500
+
+
+92 
+mov
+ 
+dl
+,#0
+x81
+
+
+94 
+jc
+ 
+no_disk1
+
+
+95 
+cmp
+ 
+ah
+,#3
+
+96 
+je
+ 
+is_disk1
+
+
+97 
+no_disk1
+:
+
+98 
+mov
+ 
+ax
+,#INITSEG
+
+99 
+mov
+ 
+es
+,
+ax
+
+
+100 
+mov
+ 
+di
+,#0
+x0090
+
+
+101 
+mov
+ 
+cx
+,#0
+x10
+
+
+102 
+mov
+ 
+ax
+,#0
+x00
+
+
+103 
+ªp
+
+
+104 
+°osb
+
+
+105 
+is_disk1
+:
+
+107 ! 
+now
+ 
+we
+ 
+w™t
+ 
+to
+ 
+move
+Åÿ
+¥Ÿe˘ed
+ 
+mode
+ ...
+
+109 
+˛i
+ ! 
+no
+ 
+öãºu±s
+ 
+Ælowed
+ !
+
+111 ! 
+fú°
+ 
+we
+ 
+move
+ 
+the
+ 
+sy°em
+ 
+to
+ 
+ô
+'sÑightfulÖlace
+
+113 
+mov
+ 
+ax
+,#0
+x0000
+
+
+114 
+˛d
+ ! 'dúe˘i⁄'=0, 
+movs
+ 
+moves
+ 
+f‹w¨d
+
+
+115 
+do_move
+:
+
+116 
+mov
+ 
+es
+,
+ax
+ ! 
+de°ö©i⁄
+ 
+£gmít
+
+
+117 
+add
+ 
+ax
+,#0
+x1000
+
+
+118 
+cmp
+ 
+ax
+,#0
+x9000
+
+
+119 
+jz
+ 
+íd_move
+
+
+120 
+mov
+ 
+ds
+,
+ax
+ ! 
+sour˚
+ 
+£gmít
+
+
+121 
+sub
+ 
+di
+,di
+
+122 
+sub
+ 
+si
+,si
+
+123 
+mov
+ 
+cx
+,#0
+x8000
+
+
+124 
+ªp
+
+
+125 
+movsw
+
+
+126 
+jmp
+ 
+do_move
+
+
+128 ! 
+thí
+ 
+we
+ 
+lﬂd
+ 
+the
+ 
+£gmít
+ 
+des¸ùt‹s
+
+
+130 
+íd_move
+:
+
+131 
+mov
+ 
+ax
+,#SETUPSEG ! 
+right
+, 
+f‹gŸ
+ 
+this
+ 
+©
+ 
+fú°
+. 
+didn
+'t work :-)
+
+132 
+mov
+ 
+ds
+,
+ax
+
+
+133 
+lidt
+ 
+idt_48
+ ! 
+lﬂd
+ 
+idt
+ 
+wôh
+ 0,0
+
+134 
+lgdt
+ 
+gdt_48
+ ! 
+lﬂd
+ 
+gdt
+ 
+wôh
+ 
+wh©evî
+ 
+≠¥›rüã
+
+
+136 ! 
+th©
+ 
+was
+ 
+∑öÀss
+, 
+now
+ 
+we
+ 
+íabÀ
+ 
+A20
+
+
+138 
+ˇŒ
+ 
+em±y_8042
+
+
+139 
+mov
+ 
+Æ
+,#0
+xD1
+ ! 
+comm™d
+ 
+wrôe
+
+
+140 
+out
+ #0
+x64
+,
+Æ
+
+
+141 
+ˇŒ
+ 
+em±y_8042
+
+
+142 
+mov
+ 
+Æ
+,#0
+xDF
+ ! 
+A20
+ 
+⁄
+
+
+143 
+out
+ #0
+x60
+,
+Æ
+
+
+144 
+ˇŒ
+ 
+em±y_8042
+
+
+146 ! 
+wñl
+, 
+th©
+ 
+wít
+ 
+ok
+, 
+I
+ 
+h›e
+. 
+Now
+ 
+we
+ 
+have
+ 
+to
+ 
+ª¥ogøm
+ 
+the
+ 
+öãºu±s
+ :-(
+
+147 ! 
+we
+ 
+put
+ 
+them
+ 
+right
+ 
+a·î
+ 
+the
+ 
+öãl
+-
+ª£rved
+ 
+h¨dw¨e
+ 
+öãºu±s
+, 
+©
+
+
+148 ! 0x20-0x2F. 
+Thîe
+ 
+they
+ 
+w⁄
+'t mess upánything. Sadly IBMÑeally
+
+149 ! 
+mes£d
+ 
+this
+ 
+up
+ 
+wôh
+ 
+the
+ 
+‹igöÆ
+ 
+PC
+, 
+™d
+ 
+they
+ 
+haví
+'t beenábleÅo
+
+150 ! 
+ª˘ify
+ 
+ô
+ 
+a·îw¨ds
+. 
+Thus
+ 
+the
+ 
+bios
+ 
+puts
+ 
+öãºu±s
+ 
+©
+ 0x08-0x0f,
+
+151 ! 
+which
+ 
+is
+ 
+u£d
+ 
+the
+ 
+öã∫Æ
+ 
+h¨dw¨e
+ 
+öãºu±s
+ 
+as
+ 
+wñl
+. 
+We
+ 
+ju°
+
+
+152 ! 
+have
+ 
+to
+ 
+ª¥ogøm
+ 
+the
+ 8259's,ánd iài¢'
+t
+ 
+fun
+.
+
+154 
+mov
+ 
+Æ
+,#0
+x11
+ ! 
+öôüliz©i⁄
+ 
+£quí˚
+
+
+155 
+out
+ #0
+x20
+,
+Æ
+ ! 
+£nd
+ 
+ô
+ 
+to
+ 8259A-1
+
+156 .
+w‹d
+ 0x00eb,0x00eb ! 
+jmp
+ 
+$
++2, jmp $+2
+
+157 
+out
+ #0
+xA0
+,
+Æ
+ ! 
+™d
+ 
+to
+ 8259A-2
+
+158 .
+w‹d
+ 0x00eb,0x00eb
+
+159 
+mov
+ 
+Æ
+,#0
+x20
+ ! 
+°¨t
+ 
+of
+ 
+h¨dw¨e
+ 's (0x20)
+
+160 
+out
+ #0
+x21
+,
+Æ
+
+
+161 .
+w‹d
+ 0x00eb,0x00eb
+
+162 
+mov
+ 
+Æ
+,#0
+x28
+ ! 
+°¨t
+ 
+of
+ 
+h¨dw¨e
+ 's 2 (0x28)
+
+163 
+out
+ #0
+xA1
+,
+Æ
+
+
+164 .
+w‹d
+ 0x00eb,0x00eb
+
+165 
+mov
+ 
+Æ
+,#0
+x04
+ ! 8259-1 
+is
+ 
+ma°î
+
+
+166 
+out
+ #0
+x21
+,
+Æ
+
+
+167 .
+w‹d
+ 0x00eb,0x00eb
+
+168 
+mov
+ 
+Æ
+,#0
+x02
+ ! 8259-2 
+is
+ 
+¶ave
+
+
+169 
+out
+ #0
+xA1
+,
+Æ
+
+
+170 .
+w‹d
+ 0x00eb,0x00eb
+
+171 
+mov
+ 
+Æ
+,#0
+x01
+ ! 8086 
+mode
+ 
+bŸh
+
+
+172 
+out
+ #0
+x21
+,
+Æ
+
+
+173 .
+w‹d
+ 0x00eb,0x00eb
+
+174 
+out
+ #0
+xA1
+,
+Æ
+
+
+175 .
+w‹d
+ 0x00eb,0x00eb
+
+176 
+mov
+ 
+Æ
+,#0
+xFF
+ ! 
+mask
+ 
+off
+ 
+Æl
+ 
+öãºu±s
+ 
+now
+
+
+177 
+out
+ #0
+x21
+,
+Æ
+
+
+178 .
+w‹d
+ 0x00eb,0x00eb
+
+179 
+out
+ #0
+xA1
+,
+Æ
+
+
+181 ! 
+wñl
+, 
+th©
+ 
+˚πaöly
+ 
+wa¢
+'àfu¿:-(. H›efuŒy iàw‹ks,ánd wêd⁄'
+t
+
+
+182 ! 
+√ed
+ 
+no
+ 
+°ìnkög
+ 
+BIOS
+ 
+	`™yway
+ (
+ex˚±
+ 
+the
+ 
+öôül
+ 
+lﬂdög
+ :-).
+
+183 ! 
+The
+ 
+BIOS
+-
+routöe
+ 
+w™ts
+ 
+lŸs
+ 
+of
+ 
+u¬e˚sßry
+ 
+d©a
+, 
+™d
+ 
+ô
+'sÜess
+
+184 ! "öãª°ög" 
+™yway
+. 
+This
+ 
+is
+ 
+how
+ 
+REAL
+ 
+¥ogømmîs
+ dÿ
+ô
+.
+
+186 ! 
+Wñl
+, 
+now
+'sÅheÅimeÅoáctually move intoÖrotected mode. To make
+
+187 ! 
+thögs
+ 
+as
+ 
+sim∂e
+á†
+possibÀ
+, 
+we
+ dÿ
+no
+ 
+£t
+-
+up
+ 
+‹
+ 
+™ythög
+,
+
+188 ! 
+we
+ 
+Àt
+ 
+the
+ 
+gnu
+-
+compûed
+ 32-
+bô
+ 
+¥ogøms
+ dÿ
+th©
+. 
+We
+ 
+ju°
+ 
+jump
+ 
+to
+
+
+189 ! 
+absﬁuã
+ 
+addªss
+ 0x00000, 
+ö
+ 32-
+bô
+ 
+¥Ÿe˘ed
+ 
+mode
+.
+
+191 
+mov
+ 
+ax
+,#0
+x0001
+ ! 
+¥Ÿe˘ed
+ 
+	$mode
+ (
+PE
+Ë
+bô
+
+
+192 
+lmsw
+ 
+ax
+ ! 
+This
+ 
+is
+ 
+ô
+!
+
+193 
+jmpi
+ 0,8 ! 
+jmp
+ 
+off£t
+ 0 
+of
+ 
+£gmít
+ 8 (
+cs
+)
+
+195 ! 
+This
+ 
+routöe
+ 
+checks
+ 
+th©
+ 
+the
+ 
+keybﬂrd
+ 
+comm™d
+ 
+queue
+ 
+is
+ 
+em±y
+
+
+196 ! 
+No
+ 
+timeout
+ 
+is
+ 
+u£d
+ - 
+this
+ 
+h™gs
+ 
+thîe
+ i†
+somëhög
+ 
+wr⁄g
+ 
+wôh
+
+
+197 ! 
+the
+ 
+machöe
+, 
+™d
+ 
+we
+ 
+¥obably
+ 
+couldn
+'tÖroceedányway.
+
+198 
+em±y_8042
+:
+
+199 .
+w‹d
+ 0x00eb,0x00eb
+
+200 
+ö
+ 
+Æ
+,#0
+x64
+ ! 8042 
+°©us
+ 
+p‹t
+
+
+201 
+ã°
+ 
+Æ
+,#2 ! 
+is
+ 
+öput
+ 
+buf„r
+ 
+fuŒ
+?
+
+202 
+jnz
+ 
+em±y_8042
+ ! 
+yes
+ - 
+lo›
+
+
+203 
+ªt
+
+
+205 
+gdt
+:
+
+206 .
+w‹d
+ 0,0,0,0 ! 
+dummy
+
+
+208 .
+w‹d
+ 0x07FF ! 8
+Mb
+ - 
+limô
+=2047 (2048*4096=8Mb)
+
+209 .
+w‹d
+ 0x0000 ! 
+ba£
+ 
+addªss
+=0
+
+210 .
+w‹d
+ 0x9A00 ! 
+code
+ 
+ªad
+/
+exec
+
+
+211 .
+w‹d
+ 0x00C0 ! 
+gønuœrôy
+=4096, 386
+
+213 .
+w‹d
+ 0x07FF ! 8
+Mb
+ - 
+limô
+=2047 (2048*4096=8Mb)
+
+214 .
+w‹d
+ 0x0000 ! 
+ba£
+ 
+addªss
+=0
+
+215 .
+w‹d
+ 0x9200 ! 
+d©a
+ 
+ªad
+/
+wrôe
+
+
+216 .
+w‹d
+ 0x00C0 ! 
+gønuœrôy
+=4096, 386
+
+218 
+idt_48
+:
+
+219 .
+w‹d
+ 0 ! 
+idt
+ 
+limô
+=0
+
+220 .
+w‹d
+ 0,0 ! 
+idt
+ 
+ba£
+=0L
+
+222 
+gdt_48
+:
+
+223 .
+w‹d
+ 0x800 ! 
+gdt
+ 
+limô
+=2048, 256 
+GDT
+ 
+íåõs
+
+
+224 .
+w‹d
+ 512+
+gdt
+,0x9 ! gdà
+ba£
+ = 0X9xxxx
+
+226 .
+ãxt
+
+
+227 
+ídãxt
+:
+
+228 .
+d©a
+
+
+229 
+ídd©a
+:
+
+230 .
+bss
+
+
+231 
+ídbss
+:
+
+	@
+1
+.
+0
+3
+26
+bootsect.s
+head.s
+setup.s
